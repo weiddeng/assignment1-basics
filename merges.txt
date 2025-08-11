@@ -60,8 +60,8 @@ i l
  H e
   "
 o w
-r i
 v er
+r i
 u t
  b e
   u
@@ -74,9 +74,9 @@ p p
 O n
   o
   y
-  r
 o o
 k ed
+  r
  he r
 c e
   I
@@ -87,13 +87,13 @@ l d
  s t
 k e
   e
-n t
  b ig
+n t
 c k
-v e
  y ou
-s t
 ver y
+s t
+v e
 e nd
   on
 u n
@@ -118,9 +118,9 @@ s e
   B
  d o
  happ y
+en t
   very
   M
-en t
 e s
  th at
  sa w
@@ -172,7 +172,6 @@ id e
  w h
  he l
 On ce
-r y
   is
  a ll
  hel p
@@ -182,6 +181,7 @@ u e
 t er
   A
  up on
+r y
 o re
 i nd
  f un
@@ -195,6 +195,7 @@ r a
   j
  d id
 get her
+  re
 u r
  s e
  to gether
@@ -202,7 +203,6 @@ a ck
  c at
 l y
  t re
-  re
 oo d
 i c
 t ed
@@ -327,6 +327,7 @@ en ed
  h ome
  play ing
 oo k
+ e very
  wa l
  m u
 u c
@@ -347,9 +348,9 @@ d d
  d own
  f l
 k ing
- p r
  too k
  sc ared
+ p r
 n y
 u re
  toy s
@@ -358,11 +359,10 @@ u re
 i f
  w ill
  bo x
-e p
 i ck
 re t
 a b
- e very
+e p
  m y
  a round
  th ings
@@ -421,7 +421,6 @@ is e
  c are
 all y
  p ic
-  v
 a u
 q u
  h ug
@@ -430,6 +429,7 @@ q u
  p o
  wa ter
 f ter
+  v
  bec ame
  be st
 au se
@@ -536,10 +536,11 @@ f t
 a se
 a st
  ha nd
+ur n
  W e
-e m
  k ind
  H is
+ t e
 he re
  happ ened
  j ust
@@ -547,7 +548,6 @@ he re
  f ood
  l ist
  did n
-ur n
  animal s
  h ig
 p l
@@ -566,7 +566,6 @@ r om
  ide a
  b etter
  A my
- t e
  b ug
  he ard
 g ry
@@ -575,8 +574,8 @@ g ry
  l et
 p ec
 at e
-f f
 ab le
+f f
   en
  care ful
  sh are
@@ -593,8 +592,8 @@ m ore
  T h
  sp ec
  spec ial
- c om
 i on
+ c om
  lot s
  ne ver
  b y
@@ -639,6 +638,7 @@ ad y
 udden ly
  pe ople
  pr oud
+ E very
  surpr ised
 pec ted
 L et
@@ -668,7 +668,6 @@ A s
 a il
 ' m
  than ked
- E very
  col or
  bl ue
  st ill
@@ -705,6 +704,7 @@ k ay
 c t
  I n
  gre at
+e m
 t ure
   qu
 le s
@@ -736,9 +736,9 @@ n ing
 a king
  kid s
  t ra
+i es
 i ful
  beaut iful
-i es
  a pp
 t h
  help ed
@@ -758,6 +758,7 @@ p t
 re ss
  pic ture
  be ing
+ re m
  every one
 I t
 ar y
@@ -794,9 +795,9 @@ v ent
  m ouse
  W h
  at e
- d e
  K itty
 is hed
+ d e
 f ore
  do ll
 s o
@@ -819,7 +820,6 @@ b le
  no ise
 ab bit
 ir st
-n g
 ow l
  w here
 a z
@@ -902,12 +902,14 @@ t ing
   G
  me an
  po nd
+em ber
  be h
  d r
  sun ny
 l ed
  other s
  as k
+n g
 c hen
  kit chen
  tal k
@@ -929,6 +931,7 @@ H ello
 at h
 j oy
   z
+ rem ember
  r ight
  flow er
  c on
@@ -985,11 +988,11 @@ W ow
 D on
  cl a
  dra w
+ re st
  he re
  y ard
  t ell
  F in
- re st
 st er
  wat ched
 q ue
@@ -1001,8 +1004,8 @@ ec t
  n ight
  ag reed
  p ick
- bl ock
 c o
+ bl ock
  h un
 ap er
 ll y
@@ -1055,9 +1058,9 @@ ar ing
  differe nt
  laug h
  d el
-er ed
  pie ce
 � �
+er ed
  M r
  ro ll
  advent ure
@@ -1091,7 +1094,6 @@ a ched
 i ent
  bro ken
  re ady
- re m
 by e
 pp y
  pr om
@@ -1127,8 +1129,8 @@ S o
 ab y
  am az
  ho ld
- wo nder
  block s
+ wo nder
  Tim my
  re pl
  A ll
@@ -1180,7 +1182,6 @@ ic ed
  th ank
  m ight
 ic y
-p e
  nam e
 iz ed
  try ing
@@ -1195,8 +1196,6 @@ as h
  look s
  bu ild
  do ing
-em ber
-em ember
  w in
  under st
 a isy
@@ -1220,8 +1219,6 @@ av y
 ot t
  d ro
  wh y
-ve ry
-very where
  a ir
  br an
  la nd
@@ -1257,11 +1254,11 @@ as k
 out h
  j ob
  color ful
-emember ed
- r emembered
+ remember ed
  big ger
  ne st
  m outh
+p e
 O kay
  less on
  jo in
@@ -1281,6 +1278,7 @@ Th is
  cl ot
  con t
  clot hes
+  ve
 ow er
  A fter
  wa ited
@@ -1326,10 +1324,9 @@ l c
 H er
  m ix
  a rm
-  ve
  b ike
  t ight
- e verywhere
+ every where
  w on
 L ucy
  tow er
@@ -1342,9 +1339,9 @@ m an
 le ss
  j u
  j e
-ap e
 am p
 B ob
+ap e
  com p
  ke y
 r ow
@@ -1434,10 +1431,10 @@ H is
  L ila
  re ally
  fin ished
+en ce
 ard s
  din ner
  s ister
-en ce
  fly ing
 ed dy
  cont in
@@ -1464,6 +1461,7 @@ g y
  dan ger
 i pp
  child ren
+ g u
  So on
  f ield
  fill ed
@@ -1471,7 +1469,6 @@ i pp
  el se
  smile s
  we lc
- g u
  A t
  w ish
  E m
@@ -1512,17 +1509,15 @@ st ead
  en ough
  roll ed
 ck et
- rem e
- reme m
  s oup
  sa il
-se s
  p urp
 im i
  y es
 a le
  dr ink
  sn ake
+se s
  b oun
  p et
  cra b
@@ -1561,11 +1556,11 @@ un ch
  mo ved
 is es
  ask s
- s u
  get ting
  clos ed
  w he
  welc ome
+ s u
  c andy
  s chool
  mor ning
@@ -1581,15 +1576,14 @@ g g
 ! ”
  danger ous
  lon ely
- remem ber
  C h
  li ving
  app les
 us h
  sh op
 as ed
-ve l
  str ange
+ve l
  shin ing
  ro ad
 e re
@@ -1597,11 +1591,12 @@ e re
  cre at
 un a
  pa w
- r a
 e y
+ r a
  sho es
-  -
+ p re
 i ble
+  -
  st re
  tal king
 al thy
@@ -1617,13 +1612,13 @@ o l
  che e
 f ish
  m ad
-e st
  f an
 ask et
  b asket
 a ss
  drag on
 a pp
+e st
 Mom my
 s et
 ck s
@@ -1665,7 +1660,6 @@ ig g
  p ill
 ph ant
 ar m
- p re
  v ill
  ch o
  sing ing
@@ -1699,9 +1693,9 @@ ra ct
  ele phant
  dro pped
  sh ap
-s c
 i er
  co ll
+s c
  te ac
 e my
  wo ke
@@ -1753,11 +1747,11 @@ J ack
  touc hed
 id ge
 co l
-r n
  j oy
  Wh iskers
  arri ved
  se ed
+ wa r
  teac her
  c orn
 G ood
@@ -1773,6 +1767,7 @@ le m
  e as
  sound s
 ll a
+ d es
  sp o
  prob lem
  b irthday
@@ -1785,7 +1780,6 @@ b r
  bug s
 il k
  wonder ful
- d es
  doll s
  bus y
 at o
@@ -1855,7 +1849,6 @@ re ad
  dir t
 og gy
  l ate
-en s
  dri ver
  se at
  buck et
@@ -1886,8 +1879,8 @@ our n
  m ach
  pu zz
  par t
- hor se
 l ing
+ hor se
  or gan
  w ild
  prin cess
@@ -1895,6 +1888,7 @@ pp ing
 oo se
  cook ie
 S ure
+en s
  hug s
  M ark
  t aking
@@ -1916,7 +1910,6 @@ il ing
  J im
  co in
  star s
-or s
  fight ing
  sp icy
  l ucky
@@ -1927,6 +1920,7 @@ He y
  b one
  in v
  Gra ndma
+or s
 n ot
  c a
 pp er
@@ -1961,9 +1955,9 @@ er t
 op h
 ri ll
  no d
+ bo ss
  la st
  com es
- bo ss
  jo ke
  mo on
  tast e
@@ -2009,8 +2003,8 @@ it y
  adventure s
  v al
  ste pped
-op e
  f le
+op e
  o ven
  take s
  miss ed
@@ -2066,8 +2060,8 @@ m er
 am ed
 ar s
 et h
- p an
  z oo
+ p an
  ph one
  grate ful
  f ing
@@ -2142,12 +2136,12 @@ on t
  sh ip
  not hing
 one st
- B e
  em b
 ig er
  p ool
  long er
  any one
+ B e
  J erry
 u ally
  fr ont
@@ -2158,8 +2152,8 @@ ir r
  s uch
  B unny
 o cked
- boss y
 m ent
+ boss y
  D oggy
  trou ble
  smell ed
@@ -2180,7 +2174,6 @@ ar ge
 ur se
  put s
 un k
-s p
  k ick
  sh irt
  W ith
@@ -2195,6 +2188,7 @@ s p
 or row
 m ing
  expl or
+s p
  mist ake
  y og
 o c
@@ -2214,10 +2208,9 @@ or k
  que en
  Wh y
  M ary
-g ing
  w ing
-w e
 on es
+w e
  l arge
  love ly
 ul t
@@ -2247,6 +2240,7 @@ ra id
  sandw ich
  pers on
 S ally
+n ed
  pretend ed
  boun ce
  w ip
@@ -2275,10 +2269,10 @@ ac ed
  swim ming
  fur ry
  splas hed
+ p ri
  love s
  tr ue
  scream ed
- p ri
  la zy
  g en
  answ er
@@ -2293,11 +2287,11 @@ a w
  power ful
  fl ag
  S t
+ ha ng
 v ous
  cl own
 e k
  ch ase
- wa r
  mot or
  wa nd
  T V
@@ -2310,6 +2304,7 @@ e k
  we aring
  no isy
  mat ter
+p a
  d ig
  he llo
  n er
@@ -2326,7 +2321,6 @@ ic ked
 o ppy
 os aur
  cir cle
-nd p
 m b
  m ap
  dr ank
@@ -2376,6 +2370,7 @@ ar l
  c ri
  g ate
  so ap
+ra g
 ut e
 iss ors
  the se
@@ -2387,7 +2382,7 @@ iss ors
  d izzy
 itt er
  gener ous
-ndp a
+nd pa
  pre s
  Ben ny
 n ic
@@ -2398,18 +2393,17 @@ vent ually
  m ic
  le ad
  s que
-sc ape
  embarrass ed
  journ ey
  sug ar
 is p
+sc ape
  bo ot
  t ent
  peace ful
  f at
  B ear
  sc issors
-i ng
  tast ed
  yell ed
 Tom my
@@ -2417,6 +2411,7 @@ Tom my
  m el
  br ush
  danc ing
+n ess
  gl ue
  h ur
  r ough
@@ -2430,12 +2425,11 @@ ot e
 u al
 im p
  prin t
-n ess
  Somet imes
 ow ed
 air s
-um e
  H ow
+um e
  c ap
  mo d
  l amp
@@ -2451,7 +2445,6 @@ an y
  g igg
  wh isp
  lo g
-s er
  sc o
  bl ow
  pain ted
@@ -2466,7 +2459,6 @@ er ries
  c age
  b ake
 r ob
-ra g
 get able
  m ountain
  ad m
@@ -2478,10 +2470,10 @@ get able
  n orm
  ve getable
 as p
- ha n
  k icked
 ust r
  sh ark
+s er
  inc red
  lo se
  norm al
@@ -2491,7 +2483,6 @@ c ed
  th ick
   3
  f ine
- f u
  gl ass
  ign or
  clo ck
@@ -2579,7 +2570,6 @@ or ry
  use ful
  explor ing
 d le
- find ing
  stra w
  unus ual
  d ug
@@ -2588,6 +2578,7 @@ d le
  tom ato
  P e
  de ad
+ find ing
  pol ice
  wr ote
  cl um
@@ -2603,7 +2594,6 @@ l ace
  clum sy
  toug h
  bubb les
-un n
  no sy
 k n
  sear ched
@@ -2613,6 +2603,7 @@ To gether
  paw s
 bb y
 o nd
+un n
 an ged
  bo ard
 f ic
@@ -2696,12 +2687,13 @@ er p
  dis g
  che ap
  guit ar
+irst y
  know ing
  advent ur
-irst y
  your self
  en ormous
  hair y
+E very
  sho ot
  Br own
  bor ed
@@ -2715,7 +2707,6 @@ l and
  small er
  st uff
  hat s
-E very
  sol ve
  Jim my
  fle xible
@@ -2750,24 +2741,24 @@ Wh o
  st age
 id ent
  mark et
- st at
  cu be
+ st at
  j ungle
  sque e
 mb re
  explain ed
+at es
  u mbre
  disgust ing
 J im
 f ted
-at es
  la b
  jo lly
  fl ash
 u nd
-p id
  fr idge
 in al
+p id
 il t
  cr ane
 c orn
@@ -2787,20 +2778,19 @@ ig inal
  h arm
 ic t
  Wh ile
- stu pid
 y ing
+ stu pid
  med ic
  In stead
  com b
  g oose
  c ro
 ed ient
-epend e
  W ill
  sto ve
 I f
 A re
- ind epende
+ ind epend
 M um
 m ost
  spr ing
@@ -2813,12 +2803,12 @@ p es
  sh ine
 H ow
  medic ine
+ d epend
  r ug
  You r
  care less
  or iginal
  st amp
- d epend
  g ar
  c ries
 In side
@@ -2835,15 +2825,14 @@ g u
  m iddle
  mag n
  stu dy
- independe nt
- e scape
+ independ ent
  fear ful
  j ack
-i o
 m et
 ink y
 S orry
  Sam my
+ e scape
  caterpill ar
  ser ious
  pe anut
@@ -2857,10 +2846,9 @@ ak en
  pe bb
   No
  f ountain
-n ed
- past a
  ra ven
  an g
+ past a
  umbre lla
  comp et
 The re
@@ -2884,6 +2872,7 @@ ag es
  for k
  cray on
  pain ting
+i o
  tri ang
  impress ive
 u d
@@ -2921,15 +2910,16 @@ l ph
  mo der
 ber ries
  show s
+r n
  pian o
  magn et
 d ile
 co dile
  hurt s
 in ary
+ re f
  cra ck
  en g
- re f
  a unt
  mel on
  wa ff
@@ -2954,8 +2944,8 @@ Tim my
  fl ute
  be et
  le an
-i v
 The ir
+i v
  pop ular
 op ter
 ic opter
@@ -3005,7 +2995,6 @@ c les
  help s
  di amond
  cam era
- co c
 at ter
 ot o
  anx ious
@@ -3020,7 +3009,6 @@ a ff
  E ven
  f is
 op l
- wa rn
  bel t
 er opl
  en v
@@ -3080,13 +3068,14 @@ M ama
  m elt
  sp ill
  ch arm
+co a
  l it
  sco ot
- re p
  c omet
  triang le
 ie f
  m ug
+ re p
 u be
  yog urt
  sp end
@@ -3120,7 +3109,6 @@ ell ig
 J ane
  th read
 it her
-o a
  v i
  lo ad
  li br
@@ -3145,7 +3133,7 @@ u bby
  persist ent
  spe ed
  m itten
- coc oa
+ co coa
  en vel
  quest ions
  comput er
@@ -3153,6 +3141,7 @@ u bby
  feather s
 h ip
  gl ove
+g ing
 Bob o
  ri ce
  shr imp
@@ -3223,7 +3212,6 @@ it al
  e ventually
  al ert
  exc ite
- ha ng
  pebb le
  ho sp
  att ract
@@ -3293,7 +3281,7 @@ el ery
  ju dge
  b ulb
  leop ard
- t em
+ te m
  yach t
  p ony
  cri cket
@@ -3417,7 +3405,6 @@ G ive
  sk ull
  l ime
  b ump
-it o
 bul ance
  am bulance
 n am
@@ -3425,6 +3412,7 @@ n am
  journ al
 G ra
  loud ly
+it o
  fold er
  sh ield
  B et
@@ -3435,7 +3423,6 @@ G ra
  play ground
  truck s
  in k
-qu ito
  light s
  t ummy
  poin ting
@@ -3443,11 +3430,15 @@ qu ito
  decor ate
  st ation
 ir it
+ pre p
  fall s
+qu ito
  P olly
 B illy
  F o
+ f u
 ent ion
+n ger
  Bird y
 l ies
  her b
@@ -3457,11 +3448,11 @@ nam ent
  gu ard
  mo s
  know s
- mos quito
  c ord
  pol ish
  mar ble
 ob y
+ mos quito
 umb led
  sal t
  att ic
@@ -3495,7 +3486,6 @@ ctop us
  call ing
  cup board
 ak y
-p ar
 us hed
  wis hes
  comp let
@@ -3517,6 +3507,7 @@ om obile
 W ell
 g l
 ut es
+p ar
  sug gest
  st ack
  th under
@@ -3596,8 +3587,8 @@ a it
 a ving
  M iss
  sho cked
- troph y
 in es
+ troph y
  pow der
  kn ight
  c ob
@@ -3612,6 +3603,7 @@ w eb
  st airs
  r ot
  c amp
+ur ch
 r ophone
  mag az
  str ugg
@@ -3624,6 +3616,7 @@ he ad
  basket ball
 B ye
 o ld
+p er
  cob web
 R e
 Jim my
@@ -3672,18 +3665,16 @@ ro sc
  L ook
 was her
  fl our
-h ic
  hot el
+h ic
  sail or
  dess ert
  ph oto
- ch ur
 rosc ope
  ve hic
 il ot
  of ten
- chur c
- churc h
+ ch urch
  P ete
  cook ing
  rem ain
@@ -3691,11 +3682,11 @@ il ot
  saus age
 ot ter
  t en
-ch or
  tool s
  med al
  e ither
  fire man
+ch or
  gra ndpa
   otter
  base ball
@@ -3729,6 +3720,7 @@ ctor y
  G ive
  an chor
  tra sh
+en se
  sh ort
 n ey
  Bet ty
@@ -3750,13 +3742,13 @@ A l
 ap ers
  u r
 in ation
- han ging
+ hang ing
 uc et
 ail able
  S unny
-e er
  Z oom
  h ive
+e er
  tow ers
 keep er
  black board
@@ -3802,7 +3794,7 @@ pl ay
 im ney
  fing ers
 ht ray
- han ger
+ ha nger
  new sp
  s ize
  la und
@@ -3813,7 +3805,7 @@ ht ray
  fis her
  k angaroo
  m en
- E verywhere
+ Every where
  tell ing
 E m
  no vel
@@ -3852,7 +3844,6 @@ Jo e
 g en
  pal ace
  impro ve
-s ses
 ac hes
  r ake
  reind eer
@@ -3860,10 +3851,10 @@ ac hes
 ocer os
  sk irt
 ur ed
-a id
  discover ed
  star ed
  ro ared
+a id
  sil ver
  t ub
  tra il
@@ -3898,13 +3889,13 @@ v ision
 v ice
 O w
  stret ched
+ie st
  zipp er
  listen ing
  s ym
  bath robe
 ale nd
  jewel ry
-ie st
  He re
  joke s
  tele vision
@@ -3924,8 +3915,8 @@ M ummy
  press ed
  K im
 ree k
-f a
  re ce
+f a
  T oby
  ne at
  c reek
@@ -3937,11 +3928,11 @@ f a
  att ach
  sym bol
  t una
+ M ar
  p apers
 M r
  un pack
  res ist
-ar ry
 l ud
  d ictionary
  sub way
@@ -3952,11 +3943,13 @@ l ud
 z ag
  spo ke
  any way
+ su per
  por ch
  help er
 af fe
  bike s
  li e
+ar ry
 ic hes
  tight ly
  com fort
@@ -3984,7 +3977,6 @@ iv al
  belong s
  swam p
  butterf lies
-e f
  g ym
  inc lud
  grow ing
@@ -4010,12 +4002,12 @@ og n
 L ittle
  ex t
  te ase
- M ar
  rec ogn
  rub ber
 i k
  hat e
 f ast
+e f
 O uch
  does n
  music ian
@@ -4034,8 +4026,8 @@ l ter
  t utor
 as is
  books he
-st ri
  gir affe
+st ri
  fest ival
  separ ate
  she lter
@@ -4052,13 +4044,11 @@ st ri
  ple ased
  dra in
  Mr s
- resc ue
  wip e
  o asis
  so il
-en se
  a head
- pre p
+ resc ue
  le aving
 um mer
  pain ter
@@ -4074,9 +4064,8 @@ um mer
  sl ipp
  qu iz
  re fused
-omet e
-omete r
-rm ometer
+re s
+rm omet
  p age
  ru les
  happen s
@@ -4088,6 +4077,7 @@ rm ometer
  Gra ndpa
  bird c
  disapp ear
+rmomet er
  Do lly
  we ather
  was te
@@ -4126,6 +4116,7 @@ r iger
  b et
 riger ator
  pe ek
+re nder
  blin ked
  star ts
  ref rigerator
@@ -4140,16 +4131,17 @@ n ight
  C o
  class room
  ce iling
- the rmometer
  car ing
 i um
+ gra nd
  miss ing
 a ked
  lic ense
  st able
+ the rmometer
  monkey s
 ast ic
- warn ed
+ war ned
  s ummer
  W here
  ab ove
@@ -4162,14 +4154,14 @@ am ber
  lab el
  ap ron
  s ent
-rn it
-rnit ure
+urn it
+urnit ure
  law y
  l id
 ugg age
 m ed
  respect ful
- fu rniture
+ f urniture
  frown ed
  zoom ed
  p ages
@@ -4213,7 +4205,6 @@ D id
  cho ice
  surpr ises
  U n
-el v
  E llie
  ar t
 C h
@@ -4225,12 +4216,12 @@ ad ium
  proud ly
 ik i
  v eterinarian
+v et
 ro d
  chair s
  sl ip
  S pe
  sad ly
-elv et
  B ow
  inc re
  C arl
@@ -4247,13 +4238,12 @@ ve al
  favour ite
 You r
  in f
-re nder
  excited ly
+ r ac
  grab s
 m end
  ste am
 th ank
- r ac
  hum an
 eor ge
 s ity
@@ -4270,6 +4260,7 @@ ol og
  remind ed
  rec ommend
  le ak
+ sur render
  har b
  app l
 cu ss
@@ -4279,7 +4270,6 @@ a ul
  put ting
  v alley
  miner al
- f re
  even ing
 el come
  mat ches
@@ -4312,6 +4302,7 @@ ec ause
  B ill
  ra ise
  N ext
+ f re
  car ed
  so cks
  stri p
@@ -4334,17 +4325,14 @@ id ay
  sh one
 le x
 her o
-pe r
-per hero
  be g
 au d
  M ike
  B inky
- su perhero
+ super hero
  delight ed
  g ro
 Y ay
- gra nd
 ch an
  chick ens
  should er
@@ -4394,12 +4382,12 @@ w ards
  co pper
  smell s
  de ar
+a h
  ent er
  prov ide
 c ast
 chan ic
  dis hes
- sur render
  E nd
 co nd
  appl aud
@@ -4424,14 +4412,13 @@ in ce
  weap on
  laug ht
   x
-a h
  laught er
  cla pping
  feel ings
 W ill
-em ent
 ick y
  splas hing
+em ent
  O r
 ac ked
  cast les
@@ -4460,26 +4447,26 @@ ig i
 Re ady
  repe at
  dem and
- Hel p
  trust ed
 L isa
  some where
 arl ie
  prun e
- wre ck
 b les
+ wre ck
   Y
  sk ill
  exam ine
  par ts
 y ear
-o e
  eat en
+o e
 A ll
 er c
 en ry
  m ention
  rain ing
+ Hel p
 B uddy
  throw s
  jog ged
@@ -4538,6 +4525,7 @@ Al ice
 g es
  bad ly
 . .
+ war n
  le ather
  ex pect
  new s
@@ -4587,8 +4575,9 @@ s pec
  spot s
  snow ball
 we en
- ener gy
 m en
+ ener gy
+ B ee
  imag ination
  blue berry
 ott en
@@ -4605,6 +4594,7 @@ re at
  saf ari
  rh ythm
  mass age
+ stom ach
  b aking
 qu ake
  night mare
@@ -4613,10 +4603,8 @@ qu ake
  ent ered
 Be fore
  st air
- B ee
  p alm
  beaut y
- stom ach
  tw isted
  b other
  wr iting
@@ -4624,7 +4612,6 @@ Be fore
  prun es
  bra in
   ing
- p ur
 ip ment
  po ppy
  hill s
@@ -4658,7 +4645,6 @@ xy gen
  lear nt
  lemon ade
  incre ase
-ang es
 ill ie
 J enny
  g az
@@ -4673,6 +4659,7 @@ ff ic
  perm it
  tre mble
  y ucky
+ang es
  move s
  introd uce
  lem ons
@@ -4687,12 +4674,12 @@ W elcome
  stri ke
  tra ffic
  includ e
-er ation
  sl ap
  rac ing
  L ucky
-re sses
+res ses
  wis dom
+ p ur
  wag s
  Fin ny
 la imed
@@ -4715,30 +4702,32 @@ h ouse
  com f
  recogn ize
  ingredient s
-t ain
   
 
  f urt
+t ain
  cand les
 M imi
  mar bles
 ri age
 und ay
+em ember
+er ation
  A lex
  ap art
  W ednesday
  growl ed
 uc t
- S u
 ore s
+ con f
  teach ing
  hop es
  fold ed
- con f
  close ly
  Fin n
  Wh o
  he el
+ S u
  S unday
  encou rage
  P aul
@@ -4756,9 +4745,7 @@ W ith
  d resses
  im age
 re c
- Co co
 c ery
- encou ra
  shout ing
  gro cery
  tw isty
@@ -4830,6 +4817,7 @@ rec i
  d ried
  fall en
  land scape
+or ies
  spr ink
  neighb our
  m ice
@@ -4840,6 +4828,7 @@ u esday
  � �
  eag erly
  sail ing
+ Co co
  pa used
 ip s
  count er
@@ -4858,14 +4847,13 @@ p ted
  re aches
  bal an
  Z ara
-n ce
 is ses
  o h
  k isses
  sty le
  bri cks
- gl o
  play s
+ gl o
  T uesday
  ide as
 s ed
@@ -4878,13 +4866,11 @@ uc ked
  see ing
  fl ap
 op s
-s hed
  acce pted
 r ight
  P ip
 To day
  bl ink
-or ies
 m m
  R os
  tre mb
@@ -4900,6 +4886,7 @@ The se
 R emy
  Ch arlie
  wander ed
+un ately
 ipp ing
  glo ves
  cap tain
@@ -4907,6 +4894,7 @@ ipp ing
  rece ive
  res p
  P inky
+ra ged
  d uring
  Every thing
 et ch
@@ -4927,16 +4915,18 @@ u x
  prin ter
  destroy ed
  treasure s
+n ce
  all ow
 up s
  had n
  wor se
  F ifi
 S urpr
+ ve l
  hit s
  b ur
 ux u
- v elvet
+ vel vet
  app ear
  disag ree
 d o
@@ -5060,11 +5050,11 @@ r r
  W iggly
  pun ished
  L iz
- A n
  B aby
 an n
 s it
  to es
+ A n
  gr ant
  mus cles
  jewel s
@@ -5079,14 +5069,15 @@ Good bye
  to re
  meas ured
 ak er
+ cra s
 omed ay
 i ers
  tra pped
  l ined
 ' ve
  ac ted
- encoura ged
-un ately
+fort unately
+ encou raged
 v a
  S andy
  rece ived
@@ -5158,6 +5149,7 @@ ake s
  str o
 ve st
  The se
+ e sc
  app ro
  sk ipping
  fis hing
@@ -5186,7 +5178,6 @@ t her
  It s
 w alk
 Bob by
- e sc
 irr ing
 J en
  sne ak
@@ -5292,7 +5283,6 @@ ab ies
 H appy
  wait s
  turn ing
-fort unately
  Sk y
 P eter
 or ed
@@ -5305,12 +5295,12 @@ at ie
 id s
  esc aped
  J ames
- investig ate
  pile s
+ investig ate
 os ity
  bro om
- so re
  ladyb ug
+ so re
  Pe pper
  appreci ate
  adm ir
@@ -5320,6 +5310,7 @@ os ity
  sister s
  emergen cy
  are a
+id es
  dad s
  answ ers
  pu pp
@@ -5328,9 +5319,9 @@ os ity
  sl apped
  w iz
  import ance
+B oo
  ser ved
  H op
-B oo
  saf ety
 iz ing
 W ould
@@ -5342,7 +5333,6 @@ B u
 ig ail
  s ings
  he n
-id es
 all en
 E lla
 b ers
@@ -5400,7 +5390,6 @@ C at
  rul er
  fl av
  down stairs
-p er
  shoot ing
  tast es
  n apping
@@ -5425,14 +5414,15 @@ a ved
  M o
  th rill
  o at
+ir ts
  res ult
 J ake
  appro ached
  R abbit
-ir ts
  crunch y
 a ct
 U n
+ rem em
  bleed ing
  remem bers
  n icer
@@ -5457,6 +5447,7 @@ h ind
 Em ily
 S omet
  apolog ized
+u es
  we ighed
 C l
  D id
@@ -5464,7 +5455,6 @@ C l
  nap s
  loo se
  pr ide
-u es
  you th
  swim s
 p ed
@@ -5474,27 +5464,27 @@ p ed
  po king
 f ied
  H o
+c ious
+el vet
  tri cked
  wonder s
  gain ed
 h a
  want ing
- cra shed
+ cras hed
  o be
  sees aw
  work er
 unn ies
 l s
-ep ared
 om ing
  draw s
- pre c
  scoop ed
 . '
  zoom ing
  opin ion
  yell ing
- pr epared
+ prep ared
  grin ned
  Slow ly
  a we
@@ -5516,8 +5506,8 @@ om ing
  ped als
 oy s
  kn elt
-O llie
 en a
+O llie
  secret s
  p ause
  decor ated
@@ -5545,7 +5535,7 @@ z en
  keep er
  spark ling
  chirp ed
- prec ious
+ pre cious
 m other
 l ier
 i en
@@ -5573,12 +5563,11 @@ om as
  his sed
 F irst
  fro zen
-o h
  frost ing
  eff ort
- be side
  buzz ing
  strugg led
+o h
  St eve
  admir ing
  re le
@@ -5602,6 +5591,7 @@ D ucky
  rock ing
  pocket s
  thrill ed
+ be side
  comp le
  A unt
  M aggie
@@ -5614,12 +5604,13 @@ is dom
  y esterday
  seem s
  r ust
-S p
  K eep
+S p
  trave led
  fold ing
  bo om
  cra cked
+it ies
  hug ging
  rad ishes
  St itch
@@ -5658,11 +5649,11 @@ Thank s
  st are
  be lly
 Y ummy
+i bb
  what ever
  apolog ize
  ro cked
  comf orted
-i bb
  B ree
  dec ision
  ribb ons
@@ -5671,6 +5662,7 @@ i bb
 er n
  strugg ling
  ex pected
+ des er
  ste ep
 w h
  prot ected
@@ -5683,11 +5675,9 @@ D uring
  M at
  pur red
  di ving
-ve r
  sad ness
 Wh iskers
  organ izing
-it ies
 low ers
  eag le
  hero es
@@ -5711,6 +5701,7 @@ E x
 R o
  Boun cy
 u se
+an a
 l oe
  t im
  drag ons
@@ -5734,7 +5725,6 @@ ir a
  G ogo
  tail s
  W atch
- g ue
  saus ages
  ar gu
  cont ro
@@ -5757,13 +5747,11 @@ joy ed
  teac hes
  spid ers
  l imes
- ref re
  R emember
  D are
  over joyed
  act ually
  sigh s
-an a
  contin ue
  cudd le
  so aring
@@ -5775,20 +5763,20 @@ an a
  ri p
  sit u
  cub es
+ ref res
  tal ent
  challen ge
  O lly
  grand mother
  S plash
-um m
  pour ing
+um m
  pretend s
  fasc in
  cut s
  quarrel ing
  pe ppers
  b ank
-i b
  shiver ed
  man e
  dust y
@@ -5798,12 +5786,13 @@ le y
  villag ers
  stretch ing
 n joy
+i b
  week s
  where ver
  dark er
- you n
 j am
 T iny
+s ses
   X
  r ings
  on wards
@@ -5834,7 +5823,6 @@ F r
  B ecause
  play room
  P rin
-he e
  act ions
  Z ero
  learn s
@@ -5874,7 +5862,6 @@ U h
  use s
  pe as
  remind er
- s ens
  contro l
 as hed
 Gra ndpa
@@ -5897,18 +5884,18 @@ ic orn
  helmet s
  crow d
 ent y
-l er
  un icorn
+l er
 se ek
-ic a
  towel s
- des er
 S illy
  L ou
  ch ips
+ic a
  cre ation
  was ted
 b ie
+M ar
  Be hind
 la ire
  mask s
@@ -5947,7 +5934,6 @@ St ay
  pro ject
  snake s
  chirp ing
-M ar
 Ben ny
  she lves
  prot ecting
@@ -5959,11 +5945,13 @@ Ben ny
  vide os
  should ers
  blow s
+he e
 F o
  prom ises
 g o
  d ent
 us an
+ue st
 jam as
  exam ined
  airpl ane
@@ -5990,7 +5978,7 @@ P ete
  dolph ins
  c ough
  b unch
- gue st
+ g uest
 c akes
  request ed
  rem ote
@@ -6021,6 +6009,7 @@ ath y
  work ers
  st ern
  E njoy
+ast er
  ne ither
 M ike
  pass ing
@@ -6035,10 +6024,10 @@ uct antly
  roll s
  pat ted
 il o
-d ies
  pa jamas
  outdo ors
 es ome
+d ies
  complain ing
  Squ irrel
 L ola
@@ -6047,7 +6036,6 @@ R un
  Prin cess
  close s
  ben eath
-ast er
  la p
  drum s
  t une
@@ -6060,6 +6048,7 @@ ang led
  S orry
  swe at
  fa ced
+.. .
  se ven
  balan ced
 e al
@@ -6068,7 +6057,6 @@ n eath
 b l
  qu acked
  A bby
-.. .
 P aul
 ist le
  aw esome
@@ -6091,6 +6079,7 @@ ist le
  ru le
  bec oming
  police man
+ m es
 u ly
  rocket s
 y ou
@@ -6134,7 +6123,6 @@ ac ob
 ke lly
 a is
  tr aded
- su per
  star fish
  supp lies
  th ro
@@ -6215,7 +6203,6 @@ Jo ey
 T ina
  K ids
  gem s
-. ."
 D ays
 or a
  under neath
@@ -6224,30 +6211,31 @@ or a
  itch y
  knowled ge
  jacket s
-. .."
  S kelly
  F or
  surf ace
  unt ie
  com m
-e ed
  D uck
+e ed
  prince sses
+.. ."
 Th ose
 id o
 H old
 Y eah
+c oon
  square s
  H enny
  warn ings
  gigg ling
 i ar
  read s
-s hing
+v in
 O ur
  ch oo
 s on
- youn ger
+ you nger
  clown s
  M ix
 T oby
@@ -6283,10 +6271,10 @@ ul ts
 bb ie
  A nt
  J ones
- un p
  bad ge
  P o
 Gra ce
+ un p
  de al
 th ough
 Ann ie
@@ -6298,17 +6286,16 @@ an es
  cover s
  p ec
 Sh h
-in t
  yell s
  satis fied
+in t
  knock s
- refre shed
+ refres hed
 t uce
  S c
 cu se
  c ous
  arrow s
-v in
 M aggie
  Wh istle
 P e
@@ -6356,8 +6343,8 @@ Ex cuse
  P aws
  pay ing
  kne es
- hid er
 ence s
+ hid er
  wander ing
  As h
  imag es
@@ -6371,8 +6358,8 @@ Ch arlie
 ?" ,
  mar ked
 br ush
-est ored
- r estored
+rr r
+ rest ored
  D ee
  lead ing
 ll ed
@@ -6386,20 +6373,19 @@ T eddy
  Sn uggles
 k y
  competit ion
- F u
  out fit
 ol ine
  wis hing
  prop erly
-t le
  vent ured
+t le
+a a
  mus cle
  dance s
  ch at
  sal ty
  pen s
 am b
-a a
  Bet sy
  ran ger
  Z iggy
@@ -6409,6 +6395,7 @@ se qu
  matter s
  dark ness
  bur st
+ F u
  rain y
  cobweb s
  ruin ing
@@ -6419,7 +6406,6 @@ se qu
 ust ed
 it ely
 st y
-rr r
  sc ur
  v ines
  fa b
@@ -6440,7 +6426,6 @@ S n
 How ever
  L inda
 r ink
-W hee
 f l
  scur ried
  lo sing
@@ -6492,8 +6477,8 @@ ais ies
  decor ating
  b acked
 c her
- pur r
  dent ist
+ pur r
  need les
  cautious ly
  lift ing
@@ -6527,9 +6512,9 @@ o ke
  g ri
 ver s
  grow s
- sweet s
   
  
+ sweet s
  Good bye
  E l
  own ers
@@ -6546,6 +6531,7 @@ b ly
  fore head
  lung s
 H arry
+ re pa
  interest ed
  bak ery
  M ilo
@@ -6560,32 +6546,30 @@ F or
 ? '
  th ud
  exha usted
+T w
  twink ling
  t apped
-T w
  ne ct
 ro sty
  nect ar
 ell e
  fe ast
-a ired
  dar ling
 ind r
  M ad
-ep aired
  wor ries
  un s
  tunnel s
  fu zzy
+ repa ired
  re ason
- r epaired
  Tr ust
  Co pper
  B all
  activ ities
+le ts
  pec ked
  H annah
-le ts
  ent rance
  T ry
  ra indr
@@ -6593,13 +6577,12 @@ le ts
  L isten
  partic ular
  complet ely
-Q ue
  ma iled
 ct ions
  nest s
  wait er
  cudd ly
- sens e
+ s ense
 R u
  N ana
  color ed
@@ -6609,13 +6592,14 @@ st ep
 b and
  pl enty
  pee king
-n o
  slam med
  C ara
+n o
  play ers
  mon th
  bu dge
  B irthday
+  Q
  sc ra
  forget s
  d en
@@ -6642,8 +6626,8 @@ bo at
  design ed
  bu ses
  o pp
+ue en
 le phant
-Que en
  suit case
  bar s
  count s
@@ -6655,10 +6639,9 @@ Que en
  ste er
  l amb
  R ain
-m as
-le e
  hon ked
 et ty
+W hee
  cow b
  separ ated
 bl ings
@@ -6680,6 +6663,7 @@ y es
 ret ch
  beh avi
  Bl oom
+m as
  li qu
  celebr ation
 b ut
@@ -6691,6 +6675,7 @@ S unny
  snat ched
  c ash
  tw ice
+le e
  s way
 it ched
  celebr ating
@@ -6698,11 +6683,11 @@ it ched
  shr inking
  ac he
 we ed
-c ope
  k ings
 ri ous
  shop s
  kitten s
+c ope
 R ose
  Jess ica
  J acob
@@ -6728,6 +6713,7 @@ ck y
 S andy
  sea weed
  dro pping
+ M el
 ile s
 P ipp
  twist ing
@@ -6736,13 +6722,13 @@ P ipp
  unt ied
 ll en
  play house
-h i
 M illie
-h o
  stud ents
  pupp ies
 c l
  So f
+h o
+h i
  screw s
  ast ron
  R e
@@ -6787,7 +6773,6 @@ us ing
 ing o
  refle ction
  hus band
- M el
 � �
 T ake
 ri ver
@@ -6795,9 +6780,9 @@ ri ver
 u ppy
  lead s
  incre ased
- do d
  bl ocked
  r ising
+ do d
  cous in
  Y esterday
  With out
@@ -6807,7 +6792,6 @@ rig ued
 K ate
  tramp oline
  begin ning
-es mer
  store keeper
  pout ed
  zebra s
@@ -6819,7 +6803,7 @@ es mer
  snow fl
  country side
 J ump
- m esmer
+ mes mer
  J ay
  vehic les
  instr um
@@ -6834,9 +6818,10 @@ U nder
 y ond
  pres ses
  be yond
-  Queen
+ Q ueen
  dam age
  On ly
+ie ce
 i very
  far t
  T ara
@@ -6857,22 +6842,20 @@ itt ed
 Z ip
  lay ing
  Rob o
+ad es
  y elp
  F ire
  rain s
  gl ued
  every body
-ad es
  cre ations
  hear ing
  sw ir
  cold er
 iver sity
-ie ce
 a el
  shap ed
  E lephant
-es t
  street s
  fin s
  rust y
@@ -6887,10 +6870,9 @@ an s
 Al ways
  strong est
 ibb it
-C o
  fit s
  Spark y
-c oon
+C o
  bell s
  doll ars
  L arry
@@ -6900,11 +6882,10 @@ ang le
  lend ing
  M oon
  Ch irp
- we e
+ee se
  cash ier
 M illy
  includ ing
-ee se
  sniff s
  san k
  rainco at
@@ -6922,13 +6903,14 @@ ter s
  guest s
  sing le
  recommend ed
+ we e
  spell s
  accomplish ment
  bel ts
  surpr ising
  end s
-e et
  hope ful
+e et
  seas ons
  T ake
  Snow man
@@ -6936,13 +6918,13 @@ e et
 B ear
  plan s
 ich ael
+ encou rag
  supp orted
 st ick
 ill ed
  suff ered
  art ist
  perform ance
-ch o
 N ina
  slow ed
  g ross
@@ -6950,22 +6932,23 @@ N ina
 id ing
 ert ain
  sp ins
+ch o
 Qu ack
  label s
 u ing
  raindr ops
  del ivery
 ara c
- stand s
  rac coon
  forgi ving
- W oo
 ob ody
+ W oo
  pour s
 t he
 il ity
  van illa
  turt les
+ stand s
 B ill
 u ess
  rec ipe
@@ -6983,7 +6966,6 @@ V room
  pop s
  corn ers
  S ophia
-n e
 el ia
  que ens
  sail boat
@@ -6991,10 +6973,10 @@ el ia
  d ie
  driver s
 it ude
+ m oo
  hall way
  imag ining
  second s
- m oo
  Fu zzy
 M ine
  prep aring
@@ -7073,8 +7055,8 @@ Mar ia
 c ited
  P lay
  Cra b
-ight ing
 M oo
+ight ing
 Do lly
  grocer ies
  zipp ing
@@ -7103,9 +7085,8 @@ Qu ick
  surf board
  shovel s
  slice s
- m erry
  To ot
-S u
+ m erry
  wob ble
  m ate
  T urt
@@ -7127,6 +7108,7 @@ aw n
 ust y
 Fr ank
 at y
+S u
  wa king
  int rigued
 S ad
@@ -7136,8 +7118,7 @@ L ike
 B etty
  p uff
  ha wk
- r e
- encoura ging
+ encourag ing
  a ud
  E x
 os en
@@ -7160,7 +7141,9 @@ he w
 ile y
  t igers
  jar s
+pec ting
  frown s
+b ird
  flutter ed
  Sad ly
  K it
@@ -7176,7 +7159,6 @@ as hes
  shark s
  ignor ing
  br u
-pec ting
  gigg les
  tiss ue
  tight er
@@ -7188,21 +7170,20 @@ f ly
  famil iar
  thorn s
 Sp ike
-b ird
  W o
  draw ers
 ch ild
+ Z ee
  exp ress
 C ar
+ment s
  de f
  d aring
  cross ing
  aud ience
-ment s
  perform ing
  colour ed
  cloud y
- Z ee
  c or
  a is
  N ick
@@ -7245,6 +7226,7 @@ ab ly
 B oys
  test ed
 ad ing
+p arent
  Chr is
 K im
  Un iversity
@@ -7253,7 +7235,6 @@ K im
  Turt le
  surf ing
  neighb ours
-ndp arent
 ar row
 ver ed
  sh ady
@@ -7308,7 +7289,6 @@ it a
 immer ing
  s ill
  bel oved
- ar r
 Pipp in
  beeh ive
 Al right
@@ -7317,9 +7297,10 @@ og a
 ll e
 ongrat ul
  oy sters
- gra ndparent
+ grand parent
  forgi ven
  magaz ines
+ ar r
  W ise
  expl od
  e lf
@@ -7391,15 +7372,16 @@ ce pt
  lick ing
  r ushing
  W ell
+n e
  join ing
  P uppy
  pol ar
  greet ed
  Mar tha
 es pite
+ann a
 - -
  Bu bb
-ann a
 Wh ich
 K iki
  wor n
@@ -7442,6 +7424,7 @@ E ven
 am boo
  d ump
  worry ing
+B ee
 z oom
 be ep
 D avid
@@ -7474,7 +7457,6 @@ er m
  rat s
  1 0
 is c
-B ee
  sand y
 re ct
  Is n
@@ -7486,7 +7468,7 @@ B inky
  punish ment
  ban ged
  human s
- cra shing
+ cras hing
  for ce
  An a
  h undred
@@ -7512,7 +7494,6 @@ year s
  dress ing
  delay ed
  todd ler
-B y
  L uckily
  fl ight
  cover ing
@@ -7520,6 +7501,7 @@ B y
 or ter
 Tw o
 O pen
+B y
  encourage ment
  ben ches
  tow ard
@@ -7559,6 +7541,7 @@ is ions
  cell s
  annoy ed
  Her b
+op es
  sniff ing
  che ers
  ad ults
@@ -7572,7 +7555,6 @@ Bu zzy
 and as
 In stead
  fl own
-op es
  snee zes
  sc en
  hands ome
@@ -7611,11 +7593,11 @@ Good night
  dream t
  M abel
 b ell
- his s
  explain s
  destro ying
  brus hing
 ous y
+ his s
  charac ters
  R azor
  C r
@@ -7632,9 +7614,9 @@ un ched
  tal ents
  on ward
 T ry
- man ag
  eng ines
  brave st
+it ion
  stern ly
  P en
  Jan ie
@@ -7649,6 +7631,7 @@ u rious
  stom p
  apolog ised
 u el
+ man ag
  sn uck
  b itten
 atter ed
@@ -7657,6 +7640,7 @@ atter ed
  remind ing
  dec isions
  sing ers
+ des per
  behavi or
  Po or
 as hing
@@ -7752,7 +7736,6 @@ R os
  back s
  G ary
  war ri
- des per
  Fish y
  E ddie
 S low
@@ -7802,6 +7785,7 @@ M agic
  snap s
  sh orter
  astronaut s
+ss ss
  unpack ing
  cott age
  Tim e
@@ -7821,7 +7805,6 @@ Z ara
 H annah
  steth oscope
 f ound
-Co co
  trust ing
  ca using
 M at
@@ -7841,13 +7824,12 @@ O live
  joy ful
 Th omas
  K aren
+m ates
  lo cks
  Pr ince
 J amie
  goat s
 wh at
-ss ss
-m ates
  tar get
 re st
  W ait
@@ -7883,10 +7865,10 @@ N ice
 Fin n
  B ad
 en ing
- P l
  knock ing
  floor s
  effort s
+ P l
  uniform s
 l ied
  T ri
@@ -7901,6 +7883,7 @@ ll as
 iv i
  wh imp
  tr ot
+ s ens
  gl itt
  appreci ation
 oo sh
@@ -7962,7 +7945,6 @@ ur render
  k illed
  drive way
  C ari
- con c
  bec omes
  tool box
  lapt op
@@ -7984,6 +7966,7 @@ so l
  suggest ion
  friendship s
  burn s
+Co co
  sl apping
  clos ing
 A rrr
@@ -8023,8 +8006,9 @@ allow een
  invit ations
  car ries
  a im
- refre shing
+ refres hing
  present ed
+ con c
 he l
  tw enty
  r owed
@@ -8080,6 +8064,7 @@ in ted
 N ear
 at ty
 M ouse
+co vered
  de fe
  Fl utter
  Bubb a
@@ -8100,11 +8085,11 @@ Ch loe
  aff ord
  N ever
  dec l
+in ch
  ra ising
 im ent
  up side
  V ivi
-fort u
 Me anwhile
 J ess
  fl ashed
@@ -8114,11 +8099,9 @@ p o
  yaw ning
  since re
  real izes
-fortu n
 atur day
 Tr ust
 Ch oo
- un fortun
  cryst als
  b uddy
  Sam antha
@@ -8138,9 +8121,8 @@ Jo sh
  pack ages
  che at
  S aturday
-in ch
  sa cks
- me sses
+ mes ses
  good byes
  co ach
  att em
@@ -8170,13 +8152,13 @@ S ince
  Play ing
  An other
 ugg ing
+ri an
 ook s
  sad der
  freez ing
  bright est
  b less
  Y awn
-ri an
  resp on
 re verse
  respon se
@@ -8231,6 +8213,7 @@ c ie
 b roken
  wis er
  custom er
+up er
 em ma
 R achel
  trave lling
@@ -8241,6 +8224,7 @@ ou quet
  haird ress
  b ouquet
  N urse
+or se
 bb le
 , '
  t umbled
@@ -8249,6 +8233,7 @@ bb le
  E lle
  honest y
  bu d
+v y
 eb ecca
 On ly
  b omb
@@ -8275,7 +8260,6 @@ ir ac
  decl ared
  correct ly
 y ler
-v y
 ook y
 f us
  beak s
@@ -8293,7 +8277,6 @@ Fin ny
  re wards
  obey ed
  custom ers
- F e
 Sh ould
  siren s
  comfort ing
@@ -8314,11 +8297,10 @@ H oney
  insist ing
  f antastic
  bend s
+ F e
  spo iling
  hairdress er
-r end
-rend ered
- sur rendered
+ surrender ed
  support ing
  share s
  po ses
@@ -8329,7 +8311,6 @@ S un
 Out side
 Jul ie
  wrink led
- M a
  C ook
  cho pped
  rec order
@@ -8361,7 +8342,6 @@ ud ged
  Pat ty
  M other
  Z ack
-up er
 ing er
 Su zy
  ex amp
@@ -8376,26 +8356,26 @@ ust er
  gr at
  L uc
  his ses
-B o
  steer ing
  sel f
  pl ugged
  Els a
  warri or
 y l
+B o
  visit s
  exerc ises
 sc reen
+ir l
 ap tain
  dan gers
  cudd les
  R el
  M in
  A r
- unfortun ately
+ un fortunately
  squ ished
  s igning
-ir l
  L ight
 be e
 R ay
@@ -8410,7 +8390,6 @@ al f
  tick les
  t ing
  R ub
-p r
 G row
  storm s
  night s
@@ -8418,6 +8397,7 @@ G row
  convin ced
  bad ger
  Els ie
+ you n
  respons ib
  choo sing
  K elly
@@ -8434,7 +8414,9 @@ C laire
  reward ing
  T re
  F ly
+p r
 g ood
+erp iece
  sun screen
  pe ep
  bo nd
@@ -8445,8 +8427,9 @@ M on
  S weet
  K aty
  S al
-s n
+il ities
  annoy ing
+s n
 e ow
  soap y
 m eow
@@ -8489,17 +8472,16 @@ Mom ma
  so ot
  guard ing
  bat hed
-ra ged
  manag er
  T ippy
 ort unately
-erp iece
  Mic roscope
 F riends
  D e
 et ah
 Snow y
  mast erpiece
+ B aa
  er asers
  tip s
  fin ishes
@@ -8514,19 +8496,17 @@ mb ers
 Pe ople
  kind er
  che etah
- H or
  particular ly
  chew s
  bl ond
 ir cle
  rip s
  be ast
- B aa
 L izzy
  argum ent
+at ive
  fa ith
  Help ing
-at ive
  earn ed
 Ann e
  obser ving
@@ -8546,6 +8526,7 @@ Ros ie
  c ages
  Tw ist
 G r
+B aa
  meow ing
  fo am
 m ered
@@ -8559,14 +8540,12 @@ etch up
  p asses
  l imp
 S que
- teles cope
  sleep s
 io let
  breath s
 ord inary
 et tle
 end ing
-B aa
  tr ans
  r in
  gasp s
@@ -8576,11 +8555,13 @@ G ot
  hat ch
  Mom ma
 o ver
+ab ra
  grass ho
  accompl ished
  Ho pper
 ac ing
  th ump
+ teles cope
  str um
  smart est
  mat s
@@ -8615,6 +8596,7 @@ ho le
  con qu
  Do es
 p it
+ad abra
 ac ock
  sn apping
  hard est
@@ -8645,10 +8627,10 @@ ll s
  spear s
  k etchup
  B erry
+M other
  soon er
  grassho pper
  behavi our
-M other
 K aren
  pat ches
  ha bit
@@ -8678,6 +8660,7 @@ l o
  to pp
  kneel ing
  ann ounced
+ S uper
  R iri
 ell ing
  pe acock
@@ -8686,19 +8669,16 @@ ct ric
  cost s
  C ally
  A choo
-b u
  zigzag s
  water mel
  th ieves
-e as
-M o
  sk irts
  jump er
  h ood
  act s
  Z og
  A pp
-ab ra
+M o
  wo lves
  Sw im
  Cl oud
@@ -8706,7 +8686,7 @@ P apa
  thumb s
  sque aky
  con cer
- coc oon
+ co coon
  wood cut
  bo ards
  Eliz a
@@ -8716,6 +8696,7 @@ id ence
 aff le
  che ating
  J ason
+b u
  tr ading
  r aking
 c at
@@ -8747,7 +8728,7 @@ r or
  St ill
  G ill
 r ough
-il ities
+am ma
  mess ages
  m irac
  C aptain
@@ -8764,8 +8745,8 @@ o ot
  Rain bow
  L ina
  Will iam
+se ss
 it s
- S uper
  M ath
 pr il
 A ny
@@ -8777,7 +8758,7 @@ Blue y
  St ep
  P inch
  H i
-rac ad
+rac adabra
 F reeze
 B ounce
  watermel on
@@ -8825,16 +8806,16 @@ f lowers
  ele ctric
  cop s
 Not hing
- un co
- as s
  apolog y
 i ving
 cream s
+a i
  sled s
  Sil ver
  L ife
 up id
  comet s
+ as s
 Ow l
  sa v
  Sh ark
@@ -8889,19 +8870,21 @@ end ed
 F ifi
  he aven
  Bird s
-ra p
  unl o
  le vers
  inch worm
+ in ter
  appro ach
  T yler
-se y
+s sess
  seagull s
+ po ssess
  cooper ate
  Ru fus
  Fel ix
  B oom
 wel come
+s ers
 rag on
 o f
 ?” .
@@ -8913,7 +8896,6 @@ oc ular
  speak s
  sneak s
 sn ap
-s ers
  bin ocular
  art work
  surf ed
@@ -8921,6 +8903,7 @@ s ers
  answer ing
  Sn ake
  short cut
+ Gra nd
  s ipped
  rob in
  d ep
@@ -8939,7 +8922,6 @@ ug ar
  appl ause
  key hole
  check out
- ch in
  M ae
  C ars
 L ia
@@ -8947,7 +8929,6 @@ D eal
  visit or
  stri king
  puppet s
- po sses
  padd ling
 E at
  un z
@@ -8958,9 +8939,7 @@ ors ie
  sp ooky
  Ot to
  G us
-it ion
 E ach
- posses s
  groan ed
  beaut ifully
  B rian
@@ -8970,24 +8949,20 @@ cident s
  cons ider
  check ing
 u ses
-o ise
  Y ellow
 j est
-am ma
  water s
  g room
  Sque ak
  Sl inky
 y le
-et s
-a i
 Jen n
  in vent
 L uke
  net s
  exam s
 ot ion
- in ter
+et s
  dry ing
  R ebecca
 u dy
@@ -9007,7 +8982,9 @@ le st
  S ince
 il i
 h ny
+es ses
  sh h
+ ch in
 an ish
  whimp ered
  health ier
@@ -9025,8 +9002,8 @@ Slow ly
  fascin ating
  bl amed
  F ind
-ch ing
 ulp ture
+ch ing
  sc ulpture
  frustr ation
  T ip
@@ -9035,13 +9012,12 @@ ou ched
  Pen elope
 e at
  po ss
- ple as
  Pe ace
 ed ic
 Sh aring
  s uck
+ ple as
  number ed
- ba a
  nibb le
  W affle
 oth y
@@ -9049,15 +9025,15 @@ i bbles
 ell ie
 am il
  flow ing
-th at
+ ba a
 hing s
 Pe pper
  ra ked
  gr umbled
  O ff
+th at
 Bu bbles
  build er
- Gra nd
 rac ted
  sway ing
  pet ting
@@ -9068,6 +9044,7 @@ rac ted
  myster ies
  det ails
  H ar
+se y
  sn ort
  fl ock
  en emy
@@ -9139,6 +9116,7 @@ get ic
  gl ared
  R ight
  Ac cidents
+st and
  unf amiliar
  space s
  mic row
@@ -9151,7 +9129,7 @@ T una
  responsib ility
  dirt ier
  P et
-racad abra
+b ank
  p ouch
  microw ave
  desk s
@@ -9168,8 +9146,8 @@ rn ie
  R avi
 l t
 f ree
-b ank
 W ant
+C ra
  wh ine
  soft ened
  re bu
@@ -9182,7 +9160,6 @@ W ant
  n atur
  Ch ip
 sc ar
-C ra
  writ er
  listen er
  T oo
@@ -9202,14 +9179,15 @@ repe at
 ent r
  law s
  dis aster
+ T ra
  R es
  Je an
  G abby
+st r
 re g
 end ant
 Rob by
  ph ones
-st r
 al a
 A va
  conf idence
@@ -9226,6 +9204,7 @@ Be ing
  fl ick
 gu ess
 as mine
+C he
  t ugging
  P retty
  Mo le
@@ -9242,7 +9221,6 @@ Wh ose
  Im mediately
  B ooks
 F ly
-C he
  Mar ch
  Animal s
 m ers
@@ -9268,6 +9246,7 @@ Je ff
  fix er
  St artled
  S ir
+ Cle an
  Cl ose
 ic ate
  sn ar
@@ -9275,7 +9254,6 @@ ic ate
 l ish
 b ling
 Ex cited
- tor t
  sk ies
  instrum ent
  Tr ucky
@@ -9283,7 +9261,6 @@ Ex cited
  Mat ilda
  H orsie
  F aye
- Cle an
 ad ually
  disag re
 ik y
@@ -9336,7 +9313,6 @@ W ally
  motor cycles
  fet ched
  cir c
-st and
  tr oll
  t unes
  somet ime
@@ -9350,13 +9326,13 @@ R ing
 K ayla
  warm ed
  Bob bie
-s a
  unlock ing
  natur al
  different ly
  b ound
  L ots
 urp le
+s a
 er g
 T ara
 D ino
@@ -9383,7 +9359,6 @@ Is n
  sens ation
  m unched
  bang ing
- T ra
  C ammy
  topp ings
  hipp os
@@ -9408,6 +9383,7 @@ ul a
 keep ers
 ber t
 M ichael
+ tor to
  other wise
  emb ra
  cr ushed
@@ -9425,12 +9401,12 @@ M ichael
  Flick er
  passen ger
  E d
+ast e
 M any
  vibr ant
- tort oise
+ torto ise
  p ounced
  Wh ich
-ast e
 Su zie
  scen e
  Gr ump
@@ -9445,9 +9421,9 @@ g r
  int ently
  cop ied
  calm er
- W hee
  Sunday s
  Light ning
+ra p
  wo ken
  tw el
  rag s
@@ -9455,6 +9431,7 @@ g r
  joy fully
  j ing
  coo lest
+ P er
 sm elling
  lecture s
  gl ob
@@ -9464,7 +9441,6 @@ is ible
  h ips
  cous ins
  aston ished
- P er
  cap es
  Out side
 un o
@@ -9473,7 +9449,7 @@ Ew w
  speak er
  reun ited
  inv isible
- gue sses
+ gu esses
  goo ey
  arri ves
 wh y
@@ -9514,6 +9490,7 @@ O l
 igg les
 N ick
  wind s
+ s us
  g ates
  disobey ed
  disagre ement
@@ -9524,6 +9501,7 @@ M ore
  ho ses
  cr isp
  aw hile
+ W hee
 it es
 L ou
  so da
@@ -9541,10 +9519,8 @@ O oh
  Bl ack
 p an
  sure ly
- c in
  L aw
  Ann abelle
-o ard
 col ored
  occas ion
  bu nd
@@ -9552,9 +9528,10 @@ r um
 izz a
 d og
 ! ’
+ st un
  guit ars
  chick s
- B a
+o ard
 ch ief
  separ ating
  seas he
@@ -9579,7 +9556,6 @@ C atch
  O ld
  C are
 sol ut
-it io
  wh ines
  sp iky
  reveal ing
@@ -9587,12 +9563,14 @@ it io
  Un i
 w orking
  tick ling
+ esc ap
  S ettle
  under water
  glob e
  cr ouched
  Ro ar
  C oby
+ B a
 u dge
 ever se
 ann e
@@ -9637,7 +9615,6 @@ Ah h
  ri pp
  mo ld
  deep ly
- cent re
  P uff
 gg les
 Th ree
@@ -9649,9 +9626,11 @@ J an
  sec urity
  peek s
  electric ity
+ cent re
  bur gers
  Sp in
 em on
+c on
  real izing
  cook s
  allow ing
@@ -9685,6 +9664,7 @@ S w
  defe ated
  build ers
  In ch
+as y
  wa ded
  tant rum
  sniff led
@@ -9699,6 +9679,7 @@ ere my
 b ang
  Sh arp
  M ila
+ar ted
  und one
  serious ly
  protect ion
@@ -9709,7 +9690,6 @@ b ang
  R ara
  P ark
  D uke
-ar ted
 Sh oo
 L izzie
  toss ing
@@ -9725,14 +9705,15 @@ S weet
  Sm o
  O ver
 solut ely
-d est
 St ill
 Sque aky
  hum med
  d edic
  courage ous
+ M a
+ H or
  D in
-ser ves
+d est
 Mad dy
 Every thing
 C urious
@@ -9740,9 +9721,28 @@ C urious
  patient s
  mu ster
  go d
- de serves
- cond itio
+ deser ves
  al oud
  T hings
 ap s
 U se
+ Sque e
+ D ragon
+ tour s
+ meet s
+ mar vel
+ R usty
+ Liz a
+ J et
+Fr oggy
+ wra pper
+ R eddy
+ H ops
+ Cr usty
+ wh iskers
+ nice st
+ impro ving
+ bo oth
+ L and
+S urrender
+Rock y

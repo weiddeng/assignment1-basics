@@ -96,7 +96,9 @@ def train_bpe(
 
         bp_counts_decre = Counter()
         # Now get ready for the next merge
-        for word in list(inverted_index[bp_to_merge]):
+        # NOTE: inverted_index[bp] is a Python set and iteration is non-deterministic, which has consequences
+        # for word in list(inverted_index[bp_to_merge]):  👈 OLD CODE ｜ NEW CODE 👇
+        for word in sorted(list(inverted_index[bp_to_merge])):
             freq = total_word_counts[word]
             split = word_splits[word]
             new_split = []

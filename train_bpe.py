@@ -1,4 +1,5 @@
-# uv run scalene --cpu --memory --no-gpu --html --outfile report.html train_bpe.py
+# Took 4h7m to run for owt_train, on Lambda workstation.
+# Do NOT use scalene to profile. Would give rise to bug.
 
 import regex as re
 import json
@@ -96,16 +97,17 @@ def train_bpe(
 
         bp_counts_decre = Counter()
         # Now get ready for the next merge
-        # NOTE: inverted_index[bp] is a Python set and iteration is non-deterministic, which has consequences
-        # for word in list(inverted_index[bp_to_merge]):  👈 OLD CODE ｜ NEW CODE 👇
+        # NOTE: inverted_index[bp] is a Python set and iteration is non-deterministic, which may have consequences
+        # for word in list(inverted_index[bp_to_merge]):  👈 OLD CODE ｜ NEW CODE 👇 didn't add noticeable latency
         for word in sorted(list(inverted_index[bp_to_merge])):
             freq = total_word_counts[word]
             split = word_splits[word]
             new_split = []
 
             i = 0
-            while i < len(split) - 1:
-                if (split[i], split[i+1]) == bp_to_merge:
+            while i < len(split):
+                # Check if we can merge at position i (need at least 2 elements remaining)
+                if i < len(split) - 1 and (split[i], split[i+1]) == bp_to_merge:
                     if i > 0:
                         bp_left = (split[i-1], split[i])
                         bp_counts_decre[bp_left] += freq
@@ -127,9 +129,6 @@ def train_bpe(
                 else:
                     new_split.append(split[i])
                     i += 1
-
-            if i == len(split) - 1:
-                new_split.append(split[i])
 
             word_splits[word] = new_split
 
@@ -158,13 +157,12 @@ def train_bpe(
 
 if __name__ == "__main__":
     vocab, merges = train_bpe(
-        "./data/TinyStoriesV2-GPT4-train.txt",
-        # TODO: 32000 leads to error!
-        vocab_size=10000,
+        "./data/owt_train.txt",
+        vocab_size=32000,
         special_tokens=["<|endoftext|>"]
     )
 
-    merges_file_path = "merges.txt"
+    merges_file_path = "merges_owt_train.txt"
     with open(merges_file_path, "w", encoding="utf-8") as f:
         for p1, p2 in merges:
             # Decode bytes into strings for writing to a text file
@@ -175,7 +173,7 @@ if __name__ == "__main__":
     
     print(f"Merges saved to {merges_file_path}")
 
-    vocab_file_path = "vocab.json"
+    vocab_file_path = "vocab_owt_train.json"
     json_vocab = {
         # JSON keys must be strings, so convert the int token ID
         str(idx): token.decode('utf-8', 'replace')

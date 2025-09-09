@@ -8,7 +8,7 @@ from collections import Counter
 from cs336_basics.pretokenization_example import find_chunk_boundaries
 
 # r for raw string
-PAT = r"""'(?:[sdmt]|ll|ve|re)| ?\p{L}+| ?\p{N}+| ?[^\s\p{L}\p{N}]+|\s+(?!\S)|\s+"""
+PAT_IN_CHUNK = r"""'(?:[sdmt]|ll|ve|re)| ?\p{L}+| ?\p{N}+| ?[^\s\p{L}\p{N}]+|\s+(?!\S)|\s+"""
 NUM_PROCESSES = 4
 
 def find_boundaries(input_path):
@@ -17,16 +17,16 @@ def find_boundaries(input_path):
         # print(boundaries)
         return boundaries
 
-def process_chunk(input_path, pat, start, end):
+def process_big_chunk(input_path, pat_between_chunks, start, end):
     word_counts = Counter()
     with open(input_path, "rb") as f:
         f.seek(start)
-        # TODO: Both ignore and replace seem to work.
-        chunk = f.read(end - start).decode("utf-8", errors="ignore")  # chunk is unicode string
-        subchunks = re.split(pat, chunk)
-        for subchunk in subchunks:
+        # Here ignore and replace are equivalent for our goal. Just think about it.
+        big_chunk = f.read(end - start).decode("utf-8", errors="ignore")  # unicode string
+        chunks = re.split(pat_between_chunks, big_chunk)
+        for chunk in chunks:
             # Note the GPT-2 pattern is exhaustive
-            for match in re.finditer(PAT, subchunk):
+            for match in re.finditer(PAT_IN_CHUNK, chunk):
                 word_counts[match.group().encode('utf-8')] += 1  # convert back to bytes
         return word_counts
 
@@ -39,18 +39,20 @@ def train_bpe(
     # merges: list[tuple[bytes, bytes]] A list of BPE merges produced from training.
 
     # remove special tokens before tokenization
-    pat = "|".join(re.escape(t) for t in special_tokens)
+    PAT_BETWEEN_CHUNKS = "|".join(re.escape(t) for t in special_tokens)
 
+    # list[int]
     boundaries = find_boundaries(input_path)
 
     with Pool(NUM_PROCESSES) as pool:
-        word_counts_chunks = pool.starmap(process_chunk, [(input_path, pat, s, e) for s, e in zip(boundaries[:-1], boundaries[1:])])
+        word_counts_chunks = pool.starmap(process_big_chunk, [(input_path, PAT_BETWEEN_CHUNKS, s, e) for s, e in zip(boundaries[:-1], boundaries[1:])])
 
     total_word_counts = Counter()
     for word_count in word_counts_chunks:
         total_word_counts.update(word_count)
     # print(total_word_counts.most_common(50))
 
+    # Build vocab bottom-up
     vocab = {i: bytes([i]) for i in range(256)}
     for i, token in enumerate(special_tokens):
         vocab[256+i] = token.encode("utf-8")
@@ -111,7 +113,7 @@ def train_bpe(
                     if i > 0:
                         bp_left = (split[i-1], split[i])
                         bp_counts_decre[bp_left] += freq
-                        # TODO: These 2 blocks would fail tests/test_train_bpe.py
+                        # TODO: Trying to optimize, but these 2 blocks would fail tests/test_train_bpe.py
                         # if bp_left in inverted_index and word in inverted_index[bp_left]:
                         #     inverted_index[bp_left].remove(word)
                         #     if not inverted_index[bp_left]:

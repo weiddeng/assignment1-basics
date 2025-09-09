@@ -25,7 +25,7 @@ def process_big_chunk(input_path, pat_between_chunks, start, end):
         big_chunk = f.read(end - start).decode("utf-8", errors="ignore")  # unicode string
         chunks = re.split(pat_between_chunks, big_chunk)
         for chunk in chunks:
-            # Note the GPT-2 pattern is exhaustive
+            # Note the GPT-2 pattern is exhaustive. And match.group() may have a leading space
             for match in re.finditer(PAT_IN_CHUNK, chunk):
                 word_counts[match.group().encode('utf-8')] += 1  # convert back to bytes
         return word_counts

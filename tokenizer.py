@@ -30,7 +30,15 @@ class Tokenizer:
         vocab = {}
         # "13": "\r"
         for k, v in vocab_raw.items():
-            vocab[int(k)] = v.encode('utf-8')
+            token_id = int(k)
+            # For single bytes (0-255), the vocab stores them as latin-1 chars
+            # We need to convert them back to the original bytes!
+            if token_id < 256:
+                # Single byte token - use latin-1 to get the original byte
+                vocab[token_id] = bytes([token_id])
+            else:
+                # Multi-byte token - use UTF-8 encoding
+                vocab[token_id] = v.encode('utf-8')
 
         merges = []
         with open(merges_filepath, 'r') as f:
@@ -39,7 +47,14 @@ class Tokenizer:
             # TODO: Actually the correct way is to use something special just like <SEPARATOR> for separation,
             # as [Token B] may contain space. But let's pretend it works - it does!
             for line in f:
-                str_1, str_2 = line.rstrip().rsplit(' ', 1)
+                line = line.rstrip()
+                # Find the last space to split on
+                idx = line.rfind(' ')
+                if idx == -1:
+                    # No space found - skip this line
+                    continue
+                str_1 = line[:idx]
+                str_2 = line[idx+1:]
                 merges.append((str_1.encode('utf-8'), str_2.encode('utf-8')))
 
         return cls(vocab, merges, special_tokens)

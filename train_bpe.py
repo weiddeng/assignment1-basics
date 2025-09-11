@@ -1,3 +1,5 @@
+# vocab_size & 80-20 distribution
+
 # Took 4h7m to run for owt_train, on Lambda workstation.
 # Do NOT use scalene to profile. Would give rise to bug.
 
@@ -6,9 +8,7 @@ import json
 from multiprocessing import Pool
 from collections import Counter
 from cs336_basics.pretokenization_example import find_chunk_boundaries
-
-# r for raw string
-PAT_IN_CHUNK = r"""'(?:[sdmt]|ll|ve|re)| ?\p{L}+| ?\p{N}+| ?[^\s\p{L}\p{N}]+|\s+(?!\S)|\s+"""
+from constants import PAT_IN_CHUNK
 NUM_PROCESSES = 4
 
 def find_boundaries(input_path):
@@ -103,6 +103,7 @@ def train_bpe(
         # for word in list(inverted_index[bp_to_merge]):  👈 OLD CODE ｜ NEW CODE 👇 didn't add noticeable latency
         for word in sorted(list(inverted_index[bp_to_merge])):
             freq = total_word_counts[word]
+            # TODO: Use double linked list instead of list for split, much better state management
             split = word_splits[word]
             new_split = []
 

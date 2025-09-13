@@ -1,5 +1,4 @@
 # Sampled documents from TinyStoriesV2-GPT4-train.txt and owt_train.txt
-# To use: from sampled_documents import tinystories_docs, owt_docs
 
 # Documents from TinyStoriesV2-GPT4-train.txt
 tinystories_docs = [

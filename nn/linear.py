@@ -11,6 +11,7 @@ class Linear(nn.Module):
 
         # This needs no T and is the opposite of Torch implementation, per homework ask
         # torch.empty is the modern and preferred way to create an uninitialized tensor
+        # The point of nn.Parameter is to automatically register a tensor as a learnable parameter of a model.
         self.weight = nn.Parameter(torch.empty(self.in_features, self.out_features, device=device, dtype=dtype))
         self.reset_parameters()
 

@@ -87,9 +87,9 @@ tok_owt = Tokenizer.from_files(
 
 # cProfile.run('tokenize_file_stream(tok_tinystories, "/Users/weideng/assignment1-basics/data/TinyStoriesV2-GPT4-valid.txt", "/Users/weideng/assignment1-basics/data-output/TinyStoriesV2-GPT4-valid-tokens.bin")', 'TinyStoriesV2-GPT4-valid-tokens.prof')
 
-cProfile.run('tokenize_file_stream(tok_owt, "/Users/weideng/assignment1-basics/data/owt_train.txt", "/Users/weideng/assignment1-basics/data-output/owt_train.bin")', 'owt_train.prof')
+# cProfile.run('tokenize_file_stream(tok_owt, "/Users/weideng/assignment1-basics/data/owt_train.txt", "/Users/weideng/assignment1-basics/data-output/owt_train.bin")', 'owt_train.prof')
 
-# cProfile.run('tokenize_file_stream(tok_owt, "/Users/weideng/assignment1-basics/data/owt_valid.txt", "/Users/weideng/assignment1-basics/data-output/owt_valid.bin")', 'owt_valid.prof')
+cProfile.run('tokenize_file_stream(tok_owt, "/Users/weideng/assignment1-basics/data/owt_valid.txt", "/Users/weideng/assignment1-basics/data-output/owt_valid.bin")', 'owt_valid.prof')
 
 
 # --- How to load and use the created .bin file ---

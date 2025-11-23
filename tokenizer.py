@@ -104,7 +104,8 @@ class Tokenizer:
         # Pre-tokenize using GPT-2 pattern
         for match in re.finditer(PAT_IN_CHUNK, text_chunk):
             word = match.group().encode('utf-8')
-            tokens = self._apply_bpe_to_word(word)
+            # Apply BPE merges on a single word
+            tokens = self._apply_bpe_merges_on_word(word)
             result_ids.extend(tokens)
         return result_ids
 
@@ -112,12 +113,12 @@ class Tokenizer:
         # Pre-tokenize using GPT-2 pattern
         for match in re.finditer(PAT_IN_CHUNK, text_chunk):
             word = match.group().encode('utf-8')
-            tokens = self._apply_bpe_to_word(word)
+            tokens = self._apply_bpe_merges_on_word(word)
             yield from tokens
 
-    def _apply_bpe_to_word(self, word: bytes) -> list[int]:
+    def _apply_bpe_merges_on_word(self, word: bytes) -> list[int]:
         """
-        Apply BPE merges to a single word using a Doubly Linked List and a Priority Queue.
+        Apply BPE merges on a single word using a Doubly Linked List and a Priority Queue.
         """
         # Define Node for Doubly Linked List
         class _Node:
@@ -217,4 +218,5 @@ class Tokenizer:
             yield from self._encode_lazy(text)
 
     def decode(self, ids: list[int]) -> str:
+        # ids → bytes → unicode string
         return b''.join([self.vocab.get(id, b'') for id in ids]).decode('utf-8', errors='replace')

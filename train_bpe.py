@@ -38,7 +38,7 @@ def train_bpe(
     # vocab: dict[int, bytes] The tokenizer vocabulary, a mapping from int (token ID) to bytes (token bytes).
     # merges: list[tuple[bytes, bytes]] A list of BPE merges produced from training.
 
-    # remove special tokens before tokenization
+    # remove special tokens before BPE vocabulary construction
     PAT_BETWEEN_CHUNKS = "|".join(re.escape(t) for t in special_tokens)
 
     # list[int]

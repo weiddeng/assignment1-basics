@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 import math
+from einops import einsum
 
 
 class Linear(nn.Module):
@@ -17,9 +18,12 @@ class Linear(nn.Module):
 
     # Convention: encapsulate weight reinitialization and called in __init__
     def reset_parameters(self) -> None:
-        # Xavier/Glorot initialization, from "Understanding the difficulty of training deep feedforward neural networks"
+        # Xavier/Glorot initialization, from "Understanding the difficulty of training deep feedforward neural networks (2010)"
+        # - weights should be initialized so that forward activations and backward gradients stay in the same magnitude range across depth,
+        # has to do with the singular values of each layer's Jacobian
         standard_deviation = math.sqrt(2/(self.in_features + self.out_features))
         torch.nn.init.trunc_normal_(self.weight, mean=0, std=standard_deviation, a=-3*standard_deviation, b=3*standard_deviation)
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        return x @ self.weight
+        # Same as x @ self.weight
+        return einsum(x, self.weight, "... d_in, d_in d_out -> ... d_out")

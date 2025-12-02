@@ -173,3 +173,6 @@ data-output/
 
 # macOS
 .DS_Store
+
+#
+*.pdf

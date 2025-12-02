@@ -5,6 +5,7 @@ from jaxtyping import Float, Int
 from einops import rearrange
 
 
+# There is a better implementation using complex numbers
 class RoPE(nn.Module):
     def __init__(self, theta: float, d_k: int, max_seq_len: int, device: torch.device | None = None):
         super().__init__()

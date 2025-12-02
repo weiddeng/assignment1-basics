@@ -18,6 +18,7 @@ from nn.swiglu import SwiGLUFeedForward
 from nn.rope import RoPE
 from nn.multihead_self_attention import MultiheadSelfAttention
 from nn.transformer_block import TransformerBlock
+from nn.transformer_lm import TransformerLM
 
 from utils.softmax import softmax
 from utils.scaled_dot_product_attention import scaled_dot_product_attention
@@ -309,16 +310,16 @@ def run_transformer_block(
     rotary_fn = lambda x: rope.forward(x, token_positions)
     transformer_block = TransformerBlock(d_model, num_heads, d_ff, rotary_fn)
     transformer_block.load_state_dict({
-                "multihead_self_attention.q_proj.weight": weights["attn.q_proj.weight"].T,
-                "multihead_self_attention.k_proj.weight": weights["attn.k_proj.weight"].T,
-                "multihead_self_attention.v_proj.weight": weights["attn.v_proj.weight"].T,
-                "multihead_self_attention.o_proj.weight": weights["attn.output_proj.weight"].T,
-                "rms_norm_0.weight": weights["ln1.weight"],
-                "rms_norm_1.weight": weights["ln2.weight"],
-                "swiglu.w1.weight": weights["ffn.w1.weight"].T,
-                "swiglu.w2.weight": weights["ffn.w2.weight"].T,
-                "swiglu.w3.weight": weights["ffn.w3.weight"].T,
-                }, strict=False)
+        "multihead_self_attention.q_proj.weight": weights["attn.q_proj.weight"].T,
+        "multihead_self_attention.k_proj.weight": weights["attn.k_proj.weight"].T,
+        "multihead_self_attention.v_proj.weight": weights["attn.v_proj.weight"].T,
+        "multihead_self_attention.o_proj.weight": weights["attn.output_proj.weight"].T,
+        "rms_norm_0.weight": weights["ln1.weight"],
+        "rms_norm_1.weight": weights["ln2.weight"],
+        "swiglu.w1.weight": weights["ffn.w1.weight"].T,
+        "swiglu.w2.weight": weights["ffn.w2.weight"].T,
+        "swiglu.w3.weight": weights["ffn.w3.weight"].T,
+        }, strict=False)
     return transformer_block(in_features)
 
 
@@ -401,7 +402,40 @@ def run_transformer_lm(
         Float[Tensor, "batch_size sequence_length vocab_size"]: Tensor with the predicted unnormalized
         next-word distribution for each token.
     """
-    raise NotImplementedError
+    assert d_model % num_heads == 0
+    d_k = d_model // num_heads
+    rope = RoPE(rope_theta, d_k, context_length)
+    batch_size = in_indices.shape[-2]
+    seq_len = in_indices.shape[-1]
+    token_positions = torch.arange(seq_len, device=in_indices.device)
+    token_positions = token_positions.unsqueeze(0).expand(batch_size, seq_len)
+    rotary_fn = lambda x: rope(x, token_positions)
+
+    transformer_lm = TransformerLM(d_model=d_model, num_heads=num_heads, d_ff=d_ff, vocab_size=vocab_size, context_length=context_length, num_layers=num_layers, rotary_fn=rotary_fn)
+    state_dict = {
+        "embedding.weight": weights["token_embeddings.weight"],
+        "rms_norm_final.weight": weights["ln_final.weight"],
+        "unembedding.linear.weight": weights["lm_head.weight"].T,
+    }
+    for i in range(num_layers):
+        src = f"layers.{i}"
+        tgt = f"transformer_blocks.{i}"
+        block_mapping = {
+            f"{tgt}.multihead_self_attention.q_proj.weight": weights[f"{src}.attn.q_proj.weight"].T,
+            f"{tgt}.multihead_self_attention.k_proj.weight": weights[f"{src}.attn.k_proj.weight"].T,
+            f"{tgt}.multihead_self_attention.v_proj.weight": weights[f"{src}.attn.v_proj.weight"].T,
+            f"{tgt}.multihead_self_attention.o_proj.weight": weights[f"{src}.attn.output_proj.weight"].T,
+            f"{tgt}.rms_norm_0.weight": weights[f"{src}.ln1.weight"],
+            f"{tgt}.rms_norm_1.weight": weights[f"{src}.ln2.weight"],
+            f"{tgt}.swiglu.w1.weight": weights[f"{src}.ffn.w1.weight"].T,
+            f"{tgt}.swiglu.w2.weight": weights[f"{src}.ffn.w2.weight"].T,
+            f"{tgt}.swiglu.w3.weight": weights[f"{src}.ffn.w3.weight"].T,
+        }
+        state_dict.update(block_mapping)
+
+    transformer_lm.load_state_dict(state_dict, strict=False)
+
+    return transformer_lm(in_indices)
 
 
 def run_rmsnorm(

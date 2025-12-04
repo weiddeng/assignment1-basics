@@ -22,6 +22,7 @@ from nn.transformer_lm import TransformerLM
 
 from utils.softmax import softmax
 from utils.scaled_dot_product_attention import scaled_dot_product_attention
+from utils.cross_entropy import cross_entropy
 
 
 def run_linear(
@@ -531,7 +532,7 @@ def run_cross_entropy(
     Returns:
         Float[Tensor, ""]: The average cross-entropy loss across examples.
     """
-    raise NotImplementedError
+    return cross_entropy(targets, inputs)
 
 
 def run_gradient_clipping(parameters: Iterable[torch.nn.Parameter], max_l2_norm: float) -> None:

@@ -28,6 +28,8 @@ from utils.cross_entropy import cross_entropy
 from utils.lr_cosine_schedule import lr_cosine_schedule
 from utils.gradient_clipping import gradient_clipping
 from utils.get_batch import get_batch
+from utils.save_checkpoint import save_checkpoint
+from utils.load_checkpoint import load_checkpoint
 
 from optim.adamw import AdamW
 
@@ -605,7 +607,7 @@ def run_save_checkpoint(
             we've completed.
         out (str | os.PathLike | BinaryIO | IO[bytes]): Path or file-like object to serialize the model, optimizer, and iteration to.
     """
-    raise NotImplementedError
+    return save_checkpoint(model, optimizer, iteration, out)
 
 
 def run_load_checkpoint(
@@ -626,7 +628,7 @@ def run_load_checkpoint(
     Returns:
         int: the previously-serialized number of iterations.
     """
-    raise NotImplementedError
+    return load_checkpoint(src, model, optimizer)
 
 
 def get_tokenizer(

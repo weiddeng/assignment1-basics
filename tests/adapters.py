@@ -5,6 +5,7 @@ from typing import IO, Any, BinaryIO
 from collections.abc import Iterable
 from jaxtyping import Float, Int
 
+import numpy as np
 import numpy.typing as npt
 import torch
 from torch import Tensor
@@ -26,6 +27,7 @@ from utils.scaled_dot_product_attention import scaled_dot_product_attention
 from utils.cross_entropy import cross_entropy
 from utils.lr_cosine_schedule import lr_cosine_schedule
 from utils.gradient_clipping import gradient_clipping
+from utils.get_batch import get_batch
 
 from optim.adamw import AdamW
 
@@ -503,7 +505,7 @@ def run_get_batch(
         is the sampled input sequences, and the second tuple item is the corresponding
         language modeling labels.
     """
-    raise NotImplementedError
+    return get_batch(dataset, batch_size, context_length, device)
 
 
 def run_softmax(in_features: Float[Tensor, "..."], dim: int) -> Float[Tensor, "..."]:

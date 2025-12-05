@@ -8,6 +8,7 @@ from jaxtyping import Float, Int
 import numpy.typing as npt
 import torch
 from torch import Tensor
+from functools import partial
 
 from train_bpe import train_bpe
 from tokenizer import Tokenizer
@@ -23,6 +24,8 @@ from nn.transformer_lm import TransformerLM
 from utils.softmax import softmax
 from utils.scaled_dot_product_attention import scaled_dot_product_attention
 from utils.cross_entropy import cross_entropy
+
+from optim.adamw import AdamW
 
 
 def run_linear(
@@ -551,7 +554,7 @@ def get_adamw_cls() -> Any:
     """
     Returns a torch.optim.Optimizer that implements AdamW.
     """
-    raise NotImplementedError
+    return partial(AdamW, lr=1e-5, betas=(0.9, 0.95), eps=1e-8, weight_decay=1e-2)
 
 
 def run_get_lr_cosine_schedule(

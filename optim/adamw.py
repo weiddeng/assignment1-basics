@@ -6,7 +6,7 @@ import math
 
 class AdamW(torch.optim.Optimizer):
     def __init__(self, params, lr, betas, eps, weight_decay):
-        # hyperparams
+        # hyperparams - lr must be hardcoded
         defaults = {"lr": lr, "betas": betas, "eps": eps, "weight_decay": weight_decay}
         super().__init__(params, defaults)
 

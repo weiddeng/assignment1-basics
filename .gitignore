@@ -176,3 +176,5 @@ data-output/
 
 #
 *.pdf
+
+wandb/

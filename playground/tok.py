@@ -16,6 +16,7 @@ tok_owt = Tokenizer.from_files(
 for doc in tinystories_docs:
     # print(tok_tinystories.encode(doc))
     print(len(doc.encode('utf-8')))
+    # computing the compression ratio
     print(len(doc.encode('utf-8')) * 1. / len(tok_tinystories.encode(doc)))
     print('\n')
 

@@ -1,5 +1,6 @@
 import argparse
 import os
+import json
 from dataclasses import dataclass, asdict
 import numpy as np
 import torch
@@ -57,6 +58,7 @@ def evaluate_loss(model, data, config, device, eval_iters=50):
     model.train()
     return sum(losses) / len(losses) if losses else 0.0
 
+# Runtime Your submission can run for at most 1.5 hours on an H100. You can enforce this by setting --time=01:30:00 in your slurm submission script.
 
 def train(cfg: TrainingConfig):
     wandb.init(project="cs336-assignment-1", config=asdict(cfg))
@@ -195,4 +197,10 @@ if __name__ == "__main__":
     os.makedirs(args.out_dir, exist_ok=True)
 
     config = TrainingConfig(**vars(args))
+    
+    config_path = os.path.join(args.out_dir, "config.json")
+    with open(config_path, "w") as f:
+        json.dump(asdict(config), f, indent=2)
+    print(f"Saved config to {config_path}")
+    
     train(config)

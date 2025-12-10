@@ -3,6 +3,7 @@ import os
 import json
 from dataclasses import dataclass, asdict
 import numpy as np
+import numpy.typing as npt
 import torch
 import wandb
 
@@ -47,52 +48,43 @@ class TrainingConfig:
 
 
 @torch.no_grad()
-def evaluate_loss(model, data, config, device, eval_iters=50):
+def evaluate_loss(model: TransformerLM, data: npt.NDArray[np.int_], config: TrainingConfig, device: str, eval_iters: int=50) -> float:
     model.eval()
     losses = []
     for _ in range(eval_iters):
         x, y = get_batch(data, config.batch_size, config.context_length, device)
-        logits = model(x)
-        loss = cross_entropy(y, logits)
+        with torch.autocast(device_type='cuda', dtype=torch.bfloat16):
+            logits = model(x)
+            loss = cross_entropy(y, logits)
         losses.append(loss.item())
     model.train()
     return sum(losses) / len(losses) if losses else 0.0
 
-# Runtime Your submission can run for at most 1.5 hours on an H100. You can enforce this by setting --time=01:30:00 in your slurm submission script.
 
 def train(cfg: TrainingConfig):
+    torch.manual_seed(2113)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(2113)
+    np.random.seed(2113)
+
+    # ~3x faster matmul on Ampere+ GPUs 4090, A100, H100, etc. negligible precision loss
+    torch.set_float32_matmul_precision('high')
+
     wandb.init(project="cs336-assignment-1", config=asdict(cfg))
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"Training on {device}...")
 
+    # deceptively simply but very powerful
     train_data = np.memmap(cfg.train_path, dtype=np.uint16, mode='r')
     val_data = np.memmap(cfg.val_path, dtype=np.uint16, mode='r')
 
-    # Validate dataset token ranges (sample-based for performance)
-    train_sample_size = min(1_000_000, len(train_data))
-    val_sample_size = min(1_000_000, len(val_data))
-
-    train_sample = train_data[:train_sample_size]
-    val_sample = val_data[:val_sample_size]
-
-    print(f"Max token in train sample ({train_sample_size} tokens): {train_sample.max()}")
-    print(f"Min token in train sample ({train_sample_size} tokens): {train_sample.min()}")
-    print(f"Max token in val sample ({val_sample_size} tokens): {val_sample.max()}")
-    print(f"Min token in val sample ({val_sample_size} tokens): {val_sample.min()}")
-
-    assert train_sample.max() < cfg.vocab_size, f"Train token {train_sample.max()} >= vocab_size {cfg.vocab_size}"
-    assert val_sample.max() < cfg.vocab_size, f"Val token {val_sample.max()} >= vocab_size {cfg.vocab_size}"
-    assert train_sample.min() >= 0, f"Train dataset has negative tokens: {train_sample.min()}"
-    assert val_sample.min() >= 0, f"Val dataset has negative tokens: {val_sample.min()}"
-
     assert cfg.d_model % cfg.num_heads == 0
     d_k = cfg.d_model // cfg.num_heads
-    rope = RoPE(cfg.rope_theta, d_k, cfg.context_length, device=device)
+    rope = RoPE(theta=cfg.rope_theta, d_k=d_k, max_seq_len=cfg.context_length, device=device)
 
-    # Precompute position indices to avoid recomputation on every forward pass
-    position_ids = torch.arange(cfg.context_length, device=device).unsqueeze(0)
-    rotary_fn = lambda x: rope(x, position_ids[:, :x.shape[-2]])
+    token_positions = torch.arange(cfg.context_length, device=device).unsqueeze(0)
+    rotary_fn = lambda x: rope(x, token_positions[:, :x.shape[-2]])
 
     model = TransformerLM(
         d_model=cfg.d_model,
@@ -112,55 +104,60 @@ def train(cfg: TrainingConfig):
         weight_decay=cfg.weight_decay
     )
 
-    iteration = 0
-    if cfg.resume:
-        iteration = load_checkpoint(cfg.resume, model, optimizer)
-        iteration += 1
-        print(f"Resumed, working on iteration {iteration} now")
+    try:
+        iteration = 0
+        if cfg.resume:
+            iteration = load_checkpoint(cfg.resume, model, optimizer)
+            iteration += 1
+            print(f"Resumed, working on iteration {iteration} now")
 
-    model.train()
-    while iteration < cfg.max_iters:
+        model.train()
+        while iteration < cfg.max_iters:
+            current_lr = lr_cosine_schedule(
+                t=iteration,
+                lr_max=cfg.lr_max,
+                lr_min=cfg.lr_min,
+                T_w=cfg.warmup_iters,
+                T_c=cfg.max_iters
+            )
+            for param_group in optimizer.param_groups:
+                param_group['lr'] = current_lr
 
-        current_lr = lr_cosine_schedule(
-            t=iteration,
-            lr_max=cfg.lr_max,
-            lr_min=cfg.lr_min,
-            T_w=cfg.warmup_iters,
-            T_c=cfg.max_iters
-        )
-        for param_group in optimizer.param_groups:
-            param_group['lr'] = current_lr
+            x, y = get_batch(train_data, cfg.batch_size, cfg.context_length, device)
 
-        x, y = get_batch(train_data, cfg.batch_size, cfg.context_length, device)
+            optimizer.zero_grad(set_to_none=True)
+            with torch.autocast(device_type='cuda', dtype=torch.bfloat16):
+                logits = model(x)
+                loss = cross_entropy(y, logits)
+            loss.backward()
 
-        optimizer.zero_grad()
-        logits = model(x)
-        loss = cross_entropy(y, logits)
-        loss.backward()
+            gradient_clipping(model.parameters(), cfg.grad_clip)
 
-        gradient_clipping(model.parameters(), cfg.grad_clip)
+            optimizer.step()
 
-        optimizer.step()
+            if iteration % cfg.log_interval == 0 or iteration == cfg.max_iters - 1:
+                val_loss = evaluate_loss(model, val_data, cfg, device)
+                print(f"Iter {iteration} | Loss: {loss.item():.4f} | Val: {val_loss:.4f} | LR: {current_lr:.6f}")
 
-        if iteration % cfg.log_interval == 0:
-            val_loss = evaluate_loss(model, val_data, cfg, device)
-            print(f"Iter {iteration} | Loss: {loss.item():.4f} | Val: {val_loss:.4f} | LR: {current_lr:.6f}")
+                wandb.log({
+                    "train/loss": loss.item(),
+                    "val/loss": val_loss,
+                    "lr": current_lr,
+                    "iteration": iteration
+                })
 
-            wandb.log({
-                "train/loss": loss.item(),
-                "val/loss": val_loss,
-                "lr": current_lr,
-                "iteration": iteration
-            })
+            if iteration % cfg.save_interval == 0 or iteration == cfg.max_iters - 1:
+                ckpt_path = os.path.join(cfg.out_dir, f"ckpt_{iteration}.pt")
+                save_checkpoint(model, optimizer, iteration, ckpt_path)
+                print(f"Saved -> {ckpt_path}")
+                # TODO: consolidate this into save_checkpoint
+                wandb.save(ckpt_path)
 
-        if iteration > 0 and iteration % cfg.save_interval == 0:
-            ckpt_path = os.path.join(cfg.out_dir, f"ckpt_{iteration}.pt")
-            save_checkpoint(model, optimizer, iteration, ckpt_path)
-            print(f"Saved -> {ckpt_path}")
-
-        iteration += 1
-
-    wandb.finish()
+            iteration += 1
+    except KeyboardInterrupt:
+        print("Training interrupted manually.")
+    finally:
+        wandb.finish()
 
 
 if __name__ == "__main__":
@@ -171,13 +168,14 @@ if __name__ == "__main__":
     parser.add_argument("--d_ff", type=int, default=2048)
     parser.add_argument("--num_layers", type=int, default=6)
     parser.add_argument("--vocab_size", type=int, default=50257)
-    parser.add_argument("--context_length", type=int, default=128)
+    parser.add_argument("--context_length", type=int, default=256)
     parser.add_argument("--rope_theta", type=float, default=10000.0)
 
     parser.add_argument("--batch_size", type=int, default=32)
     parser.add_argument("--lr_max", type=float, default=6e-4)
     parser.add_argument("--lr_min", type=float, default=6e-5)
     parser.add_argument("--max_iters", type=int, default=5000)
+    # 2% of max_iters
     parser.add_argument("--warmup_iters", type=int, default=100)
     parser.add_argument("--grad_clip", type=float, default=1.0)
 

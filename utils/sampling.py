@@ -5,16 +5,6 @@ from .softmax import softmax
 
 
 def softmax_with_temperature(logits: Float[Tensor, "vocab_size"], temperature: float = 1.0) -> Float[Tensor, "vocab_size"]:
-    """
-    Apply temperature scaling to logits and return softmax probabilities.
-    
-    Args:
-        logits: tensor of shape (vocab_size,)
-        temperature: float, temperature parameter for scaling
-    
-    Returns:
-        probs: tensor of shape (vocab_size,) with softmax probabilities
-    """
     assert temperature >= 0
     if temperature == 0:
         probabilities = torch.zeros_like(logits)
@@ -35,12 +25,16 @@ def top_p_sampling(probs: Float[Tensor, "vocab_size"], p: float = 1.0) -> Float[
     Returns:
         filtered_probs: tensor of shape (vocab_size,) with filtered and renormalized probabilities
     """
-    sorted_probs, sorted_indices = probs.sort(descending=True)
+    sorted_probs, sorted_indices = probs.sort(dim=-1, descending=True)
     cumsum = sorted_probs.cumsum(dim=-1)
     mask_sorted = cumsum - sorted_probs >= p
-    # Make sure mask_sorted not masking everything
+
+    # Make sure mask_sorted is not masking everything
     mask_sorted[0] = False
-    sorted_probs[mask_sorted] = 0.0
-    filtered_probs = torch.zeros_like(probs)
-    filtered_probs.scatter_(dim=-1, index=sorted_indices, src=sorted_probs)
-    return filtered_probs / filtered_probs.sum()
+
+    # Boolean indexing/filtering!
+    indices_to_remove = sorted_indices[mask_sorted]
+
+    prob_output = probs.clone()
+    prob_output[indices_to_remove] = 0
+    return prob_output / prob_output.sum()

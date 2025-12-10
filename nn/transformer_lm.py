@@ -18,6 +18,7 @@ class TransformerLM(nn.Module):
         self.embedding = Embedding(vocab_size, d_model)
 
         self.transformer_blocks = nn.ModuleList([
+            # rotary_fn is plug-and-play
             TransformerBlock(d_model, num_heads, d_ff, rotary_fn) for _ in range(self.num_layers)
         ])
 
@@ -26,8 +27,7 @@ class TransformerLM(nn.Module):
 
 
     def forward(self, token_ids: Int[Tensor, "... seq_len"]):
-        in_features = self.embedding(token_ids)
+        features = self.embedding(token_ids)
         for block in self.transformer_blocks:
-            out_features = block(in_features)
-            in_features = out_features
-        return self.unembedding(self.rms_norm_final(in_features))
+            features = block(features)
+        return self.unembedding(self.rms_norm_final(features))

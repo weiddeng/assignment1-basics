@@ -22,8 +22,12 @@ class TransformerBlock(nn.Module):
         self.rms_norm_1 = RMSNorm(self.d_model)
         self.swiglu = SwiGLUFeedForward(self.d_model, self.d_ff)
 
-    def forward(self, in_features: Float[Tensor, "... seq_len d_model"]):
-        block_0_residual = self.multihead_self_attention(self.rms_norm_0(in_features), self.rotary_fn)
-        block_0_out = in_features + block_0_residual
-        block_1_residual = self.swiglu(self.rms_norm_1(block_0_out))
-        return block_0_out + block_1_residual
+    def forward(self, features: Float[Tensor, "... seq_len d_model"]):
+        delta = self.rms_norm_0(features)
+        delta = self.multihead_self_attention(delta, self.rotary_fn)
+        features += delta
+        delta = self.rms_norm_1(features)
+        delta = self.swiglu(delta)
+        features += delta
+
+        return features

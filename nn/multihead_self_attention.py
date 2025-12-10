@@ -16,7 +16,7 @@ class MultiheadSelfAttention(nn.Module):
         self.device = device
         self.dtype = dtype
 
-        # We do the vanilla version where proj matrices are square
+        # We do the version where proj matrices are square
         assert d_model % num_heads == 0
 
         self.d_model = d_model
@@ -30,7 +30,7 @@ class MultiheadSelfAttention(nn.Module):
 
     def forward(self, x: Float[Tensor, "... seq_len d_model"], rotary_fn: Callable | None = None):
         seq_len = x.shape[-2]
-        # NO shift at QKV. The Label seq shifts.
+        # NO shift at QKV. The label seq shifts.
         mask = torch.tril(torch.ones(seq_len, seq_len, device=x.device), diagonal=0)
 
         q = self.q_proj(x)

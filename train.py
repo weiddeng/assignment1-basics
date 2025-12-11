@@ -53,6 +53,7 @@ def evaluate_loss(model: TransformerLM, data: npt.NDArray[np.int_], config: Trai
     losses = []
     for _ in range(eval_iters):
         x, y = get_batch(data, config.batch_size, config.context_length, device)
+        # mixed-precision computation
         with torch.autocast(device_type='cuda', dtype=torch.bfloat16):
             logits = model(x)
             loss = cross_entropy(y, logits)
@@ -127,6 +128,7 @@ def train(cfg: TrainingConfig):
             x, y = get_batch(train_data, cfg.batch_size, cfg.context_length, device)
 
             optimizer.zero_grad(set_to_none=True)
+            # mixed-precision computation
             with torch.autocast(device_type='cuda', dtype=torch.bfloat16):
                 logits = model(x)
                 loss = cross_entropy(y, logits)

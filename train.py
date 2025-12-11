@@ -123,6 +123,7 @@ def train(cfg: TrainingConfig):
             for param_group in optimizer.param_groups:
                 param_group['lr'] = current_lr
 
+            # A simple data feeder, stateless, sample "with replacement", but also "augmentation"
             x, y = get_batch(train_data, cfg.batch_size, cfg.context_length, device)
 
             optimizer.zero_grad(set_to_none=True)

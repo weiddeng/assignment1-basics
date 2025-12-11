@@ -10,7 +10,7 @@ def softmax_with_temperature(logits: Float[Tensor, "vocab_size"], temperature: f
         probabilities = torch.zeros_like(logits)
         probabilities[logits.argmax()] = 1.0
         return probabilities
-    logits /= temperature
+    logits = logits / temperature
     return softmax(logits, -1)
 
 

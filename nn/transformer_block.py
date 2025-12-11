@@ -25,9 +25,9 @@ class TransformerBlock(nn.Module):
     def forward(self, features: Float[Tensor, "... seq_len d_model"]):
         delta = self.rms_norm_0(features)
         delta = self.multihead_self_attention(delta, self.rotary_fn)
-        features += delta
+        features = features + delta
         delta = self.rms_norm_1(features)
         delta = self.swiglu(delta)
-        features += delta
+        features = features + delta
 
         return features

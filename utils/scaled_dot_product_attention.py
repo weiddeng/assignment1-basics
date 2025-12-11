@@ -22,7 +22,7 @@ def scaled_dot_product_attention(
 
     # Cannot do `if mask` as cannot bool on a tensor object with more than one value
     if mask is not None:
-        scaled_q_on_k += torch.where(mask == 1, 0.0, -torch.inf)
+        scaled_q_on_k = scaled_q_on_k + torch.where(mask == 1, 0.0, -torch.inf)
 
     attention_prob = softmax(scaled_q_on_k, -1)
 

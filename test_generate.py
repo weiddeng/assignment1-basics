@@ -1,12 +1,11 @@
 import torch
-from tokenizer import Tokenizer
 from nn.transformer_lm import TransformerLM
 from nn.rope import RoPE
 from generate import generate_text, load_tokenizer
 
-device = "cpu"
+device = "cuda" if torch.cuda.is_available() else "cpu"
+print(f"Testing on device: {device}")
 
-# Small model config for quick testing
 cfg = {
     "d_model": 64,
     "num_heads": 2,
@@ -17,11 +16,11 @@ cfg = {
     "rope_theta": 10000.0,
 }
 
-# Build model
+# Init model
 d_k = cfg["d_model"] // cfg["num_heads"]
-rope = RoPE(cfg["rope_theta"], d_k, cfg["context_length"], device=device)
-position_ids = torch.arange(cfg["context_length"], device=device).unsqueeze(0)
-rotary_fn = lambda x: rope(x, position_ids[:, :x.shape[-2]])
+rope = RoPE(theta=cfg["rope_theta"], d_k=d_k, max_seq_len=cfg["context_length"], device=device)
+token_positions = torch.arange(cfg["context_length"], device=device).unsqueeze(0)
+rotary_fn = lambda x: rope(x, token_positions[:, :x.shape[-2]])
 
 model = TransformerLM(
     d_model=cfg["d_model"],
@@ -37,7 +36,7 @@ model = TransformerLM(
 tokenizer = load_tokenizer("vocab.json", "merges.txt")
 
 # Generate (will be gibberish since model is untrained)
-prompt = "Once upon a time"
+prompt = "Once upon a time, "
 print(f"Prompt: {prompt}")
 print(f"Generating with untrained model...")
 

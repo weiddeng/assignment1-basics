@@ -6,6 +6,7 @@ import numpy as np
 import numpy.typing as npt
 
 
+# A simple data feeder, stateless, sample "with replacement", but also "augmentation"
 def get_batch(
         x: npt.NDArray[np.int_],
         batch_size: int,

@@ -178,3 +178,5 @@ data-output/
 *.pdf
 
 wandb/
+.vscode/
+checkpoints/

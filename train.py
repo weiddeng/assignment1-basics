@@ -45,6 +45,7 @@ class TrainingConfig:
     resume: str
     log_interval: int
     save_interval: int
+    overfit_single_batch: bool
 
 
 @torch.no_grad()
@@ -113,6 +114,12 @@ def train(cfg: TrainingConfig):
             print(f"Resumed, working on iteration {iteration} now")
 
         model.train()
+
+        overfit_x, overfit_y = None, None
+        if cfg.overfit_single_batch:
+            overfit_x, overfit_y = get_batch(train_data, cfg.batch_size, cfg.context_length, device)
+            print("Overfitting to a single batch...")
+
         while iteration < cfg.max_iters:
             current_lr = lr_cosine_schedule(
                 t=iteration,
@@ -124,8 +131,10 @@ def train(cfg: TrainingConfig):
             for param_group in optimizer.param_groups:
                 param_group['lr'] = current_lr
 
-            # A simple data feeder, stateless, sample "with replacement", but also "augmentation"
-            x, y = get_batch(train_data, cfg.batch_size, cfg.context_length, device)
+            if cfg.overfit_single_batch:
+                x, y = overfit_x, overfit_y
+            else:
+                x, y = get_batch(train_data, cfg.batch_size, cfg.context_length, device)
 
             optimizer.zero_grad(set_to_none=True)
             # mixed-precision computation
@@ -193,6 +202,7 @@ if __name__ == "__main__":
     parser.add_argument("--resume", type=str, default=None)
     parser.add_argument("--log_interval", type=int, default=100)
     parser.add_argument("--save_interval", type=int, default=1000)
+    parser.add_argument("--overfit_single_batch", action="store_true", help="Train on a single batch to test memorization")
 
     args = parser.parse_args()
     os.makedirs(args.out_dir, exist_ok=True)

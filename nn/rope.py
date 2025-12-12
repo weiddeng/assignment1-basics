@@ -32,6 +32,7 @@ class RoPE(nn.Module):
     # This is a matrix multiplication, but we rarely construct the matrix out and then multiply, for efficiency
     def forward(self, x: Float[Tensor, "... seq_len d_k"], token_positions: Int[Tensor, "... seq_len"]) -> Float[Tensor, "... seq_len d_k"]:
         phase_vectors_slice = self.phase_vectors[token_positions, :]
+        # torch.complex() doesn't support bfloat16, so cast to float32 temporarily
         original_dtype = x.dtype
         x = x.float()
         x = torch.complex(x[..., 0::2], x[..., 1::2])

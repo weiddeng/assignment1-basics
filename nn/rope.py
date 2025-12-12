@@ -32,7 +32,10 @@ class RoPE(nn.Module):
     # This is a matrix multiplication, but we rarely construct the matrix out and then multiply, for efficiency
     def forward(self, x: Float[Tensor, "... seq_len d_k"], token_positions: Int[Tensor, "... seq_len"]) -> Float[Tensor, "... seq_len d_k"]:
         phase_vectors_slice = self.phase_vectors[token_positions, :]
+        original_dtype = x.dtype
+        x = x.float()
         x = torch.complex(x[..., 0::2], x[..., 1::2])
         x_rotated = phase_vectors_slice * x
         x_rotated = torch.view_as_real(x_rotated)
-        return rearrange(x_rotated, "... penultimate last -> ... (penultimate last)")
+        x_rotated = rearrange(x_rotated, "... penultimate last -> ... (penultimate last)")
+        return x_rotated.to(original_dtype)

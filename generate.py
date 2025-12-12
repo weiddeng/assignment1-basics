@@ -3,11 +3,11 @@ import json
 import torch
 import numpy as np
 
-from tokenizer import Tokenizer
-from nn.transformer_lm import TransformerLM
-from nn.rope import RoPE
-from utils.load_checkpoint import load_checkpoint
-from utils.sampling import softmax_with_temperature, top_p_sampling
+from cs336_basics.tokenizer import Tokenizer
+from cs336_basics.nn.transformer_lm import TransformerLM
+from cs336_basics.nn.rope import RoPE
+from cs336_basics.utils.load_checkpoint import load_checkpoint
+from cs336_basics.utils.sampling import softmax_with_temperature, top_p_sampling
 
 
 @torch.no_grad()

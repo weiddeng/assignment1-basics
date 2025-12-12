@@ -7,15 +7,15 @@ import numpy.typing as npt
 import torch
 import wandb
 
-from nn.transformer_lm import TransformerLM
-from nn.rope import RoPE
-from optim.adamw import AdamW
-from utils.cross_entropy import cross_entropy
-from utils.lr_cosine_schedule import lr_cosine_schedule
-from utils.get_batch import get_batch
-from utils.gradient_clipping import gradient_clipping
-from utils.save_checkpoint import save_checkpoint
-from utils.load_checkpoint import load_checkpoint
+from cs336_basics.nn.transformer_lm import TransformerLM
+from cs336_basics.nn.rope import RoPE
+from cs336_basics.optim.adamw import AdamW
+from cs336_basics.utils.cross_entropy import cross_entropy
+from cs336_basics.utils.lr_cosine_schedule import lr_cosine_schedule
+from cs336_basics.utils.get_batch import get_batch
+from cs336_basics.utils.gradient_clipping import gradient_clipping
+from cs336_basics.utils.save_checkpoint import save_checkpoint
+from cs336_basics.utils.load_checkpoint import load_checkpoint
 
 
 @dataclass

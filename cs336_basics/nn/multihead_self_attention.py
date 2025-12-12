@@ -5,7 +5,7 @@ from typing import Callable
 from torch import Tensor
 from einops import einsum, rearrange
 from .linear import Linear
-from utils.scaled_dot_product_attention import scaled_dot_product_attention
+from cs336_basics.utils.scaled_dot_product_attention import scaled_dot_product_attention
 
 
 # Compare w/ DeepSeek V2 MLA, and LoRA

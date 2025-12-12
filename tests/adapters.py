@@ -11,27 +11,27 @@ import torch
 from torch import Tensor
 from functools import partial
 
-from train_bpe import train_bpe
-from tokenizer import Tokenizer
-from nn.linear import Linear
-from nn.embedding import Embedding
-from nn.rms_norm import RMSNorm
-from nn.swiglu import SwiGLUFeedForward
-from nn.rope import RoPE
-from nn.multihead_self_attention import MultiheadSelfAttention
-from nn.transformer_block import TransformerBlock
-from nn.transformer_lm import TransformerLM
+from cs336_basics.train_bpe import train_bpe
+from cs336_basics.tokenizer import Tokenizer
+from cs336_basics.nn.linear import Linear
+from cs336_basics.nn.embedding import Embedding
+from cs336_basics.nn.rms_norm import RMSNorm
+from cs336_basics.nn.swiglu import SwiGLUFeedForward
+from cs336_basics.nn.rope import RoPE
+from cs336_basics.nn.multihead_self_attention import MultiheadSelfAttention
+from cs336_basics.nn.transformer_block import TransformerBlock
+from cs336_basics.nn.transformer_lm import TransformerLM
 
-from utils.softmax import softmax
-from utils.scaled_dot_product_attention import scaled_dot_product_attention
-from utils.cross_entropy import cross_entropy
-from utils.lr_cosine_schedule import lr_cosine_schedule
-from utils.gradient_clipping import gradient_clipping
-from utils.get_batch import get_batch
-from utils.save_checkpoint import save_checkpoint
-from utils.load_checkpoint import load_checkpoint
+from cs336_basics.utils.softmax import softmax
+from cs336_basics.utils.scaled_dot_product_attention import scaled_dot_product_attention
+from cs336_basics.utils.cross_entropy import cross_entropy
+from cs336_basics.utils.lr_cosine_schedule import lr_cosine_schedule
+from cs336_basics.utils.gradient_clipping import gradient_clipping
+from cs336_basics.utils.get_batch import get_batch
+from cs336_basics.utils.save_checkpoint import save_checkpoint
+from cs336_basics.utils.load_checkpoint import load_checkpoint
 
-from optim.adamw import AdamW
+from cs336_basics.optim.adamw import AdamW
 
 
 def run_linear(

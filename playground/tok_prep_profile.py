@@ -1,7 +1,7 @@
 import os
 import cProfile
 import numpy as np
-from tokenizer import Tokenizer
+from cs336_basics.tokenizer import Tokenizer
 
 
 def format_bytes(size_bytes: int) -> str:

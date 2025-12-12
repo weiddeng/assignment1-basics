@@ -1,6 +1,6 @@
 import torch
-from nn.transformer_lm import TransformerLM
-from nn.rope import RoPE
+from cs336_basics.nn.transformer_lm import TransformerLM
+from cs336_basics.nn.rope import RoPE
 from generate import generate_text, load_tokenizer
 
 device = "cuda" if torch.cuda.is_available() else "cpu"

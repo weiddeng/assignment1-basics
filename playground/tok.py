@@ -1,4 +1,4 @@
-from tokenizer import Tokenizer
+from cs336_basics.tokenizer import Tokenizer
 from sampled_documents import tinystories_docs, owt_docs
 
 tok_tinystories = Tokenizer.from_files(

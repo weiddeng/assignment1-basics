@@ -44,6 +44,7 @@ class MultiheadSelfAttention(nn.Module):
             q = rotary_fn(q)
             k = rotary_fn(k)
 
+        # The scaled_dot_product_attention is where to swap to the flash attention
         o = scaled_dot_product_attention(q, k, v, mask)
         o = rearrange(o, "... num_heads seq_len d_k -> ... seq_len (num_heads d_k)", num_heads=self.num_heads)
 

@@ -143,9 +143,10 @@ def train(cfg: TrainingConfig):
                 loss = cross_entropy(y, logits)
             loss.backward()
 
-            gradient_clipping(model.parameters(), cfg.grad_clip)
+            grad_norm = gradient_clipping(model.parameters(), cfg.grad_clip)
 
             optimizer.step()
+            wandb.log({"grad_norm": grad_norm}, step=iteration)
 
             if iteration % cfg.log_interval == 0 or iteration == cfg.max_iters - 1:
                 val_loss = evaluate_loss(model, val_data, cfg, device)

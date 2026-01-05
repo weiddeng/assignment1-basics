@@ -3,7 +3,7 @@ import torch
 import math
 
 
-def gradient_clipping(parameters: Iterable[torch.nn.Parameter], max_l2_norm: float) -> None:
+def gradient_clipping(parameters: Iterable[torch.nn.Parameter], max_l2_norm: float) -> float:
     grads = [param.grad for param in parameters if param.grad is not None]
     if not grads:
         return
@@ -13,3 +13,6 @@ def gradient_clipping(parameters: Iterable[torch.nn.Parameter], max_l2_norm: flo
     if l2_norm > max_l2_norm:
         for g in grads:
             g.mul_(max_l2_norm / (l2_norm + 1e-6))
+
+    # for grad_norm logging
+    return l2_norm

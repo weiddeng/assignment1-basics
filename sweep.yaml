@@ -17,6 +17,8 @@ parameters:
     value: 12
   d_ff:
     value: 2048
+  vocab_size:
+    value: 32000
   context_length:
     value: 512         # Tuned
   

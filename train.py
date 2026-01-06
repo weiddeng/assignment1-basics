@@ -1,6 +1,7 @@
 import argparse
 import os
 import json
+import time
 from dataclasses import dataclass, asdict
 import numpy as np
 import numpy.typing as npt
@@ -122,6 +123,8 @@ def train(cfg: TrainingConfig):
 
         model.train()
 
+        start_time = time.time()
+
         overfit_x, overfit_y = None, None
         if cfg.overfit_single_batch:
             overfit_x, overfit_y = get_batch(train_data, cfg.batch_size, cfg.context_length, device)
@@ -157,13 +160,22 @@ def train(cfg: TrainingConfig):
             wandb.log({"grad_norm": grad_norm}, step=iteration)
 
             if iteration % cfg.log_interval == 0 or iteration == cfg.max_iters - 1:
+                elapsed = time.time() - start_time
+                iter_per_sec = (iteration + 1) / elapsed
+
+                if iteration < 10:
+                    speed_str = "(compiling...)"
+                else:
+                    speed_str = f"{iter_per_sec:.2f}"
+
                 val_loss = evaluate_loss(model, val_data, cfg, device)
-                print(f"Iter {iteration} | train/loss: {loss.item():.4f} | val/loss: {val_loss:.4f} | LR: {current_lr:.6f}")
+                print(f"Iter {iteration} | train/loss: {loss.item():.4f} | val/loss: {val_loss:.4f} | LR: {current_lr:.6f} | iter/sec: {speed_str}")
 
                 wandb.log({
                     "train/loss": loss.item(),
                     "val/loss": val_loss,
                     "lr": current_lr,
+                    "iter_per_sec": iter_per_sec,
                     "iteration": iteration
                 })
 
@@ -216,10 +228,10 @@ if __name__ == "__main__":
     os.makedirs(args.out_dir, exist_ok=True)
 
     config = TrainingConfig(**vars(args))
-    
+
     config_path = os.path.join(args.out_dir, "config.json")
     with open(config_path, "w") as f:
         json.dump(asdict(config), f, indent=2)
     print(f"Saved config to {config_path}")
-    
+
     train(config)

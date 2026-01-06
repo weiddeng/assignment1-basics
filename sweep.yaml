@@ -1,4 +1,3 @@
-# sweep.yaml
 program: train.py
 method: grid
 metric:
@@ -8,8 +7,8 @@ parameters:
   # The Variables
   lr_max:
     values: [3e-4, 6e-4, 1e-3, 3e-3]
-  
-  # The Fixed Architecture (GPT-2 Small)
+
+  # The Fixed Architecture
   d_model:
     value: 768
   num_heads:
@@ -19,11 +18,11 @@ parameters:
   d_ff:
     value: 2048
   context_length:
-    value: 1024
+    value: 512         # Tuned
   
   # The Training Settings
   batch_size:
-    value: 64          # Safe start, but H100 fits way more
+    value: 128         # Tuned
   max_iters:
     value: 3000        # Short sweep
   warmup_iters:

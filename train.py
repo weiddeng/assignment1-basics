@@ -52,6 +52,7 @@ class TrainingConfig:
 def evaluate_loss(model: TransformerLM, data: npt.NDArray[np.int_], config: TrainingConfig, device: str, eval_iters: int=50) -> float:
     model.eval()
     losses = []
+    # multiple rounds for statistical significance
     for _ in range(eval_iters):
         x, y = get_batch(data, config.batch_size, config.context_length, device)
         # mixed-precision computation
@@ -85,8 +86,9 @@ def train(cfg: TrainingConfig):
     d_k = cfg.d_model // cfg.num_heads
     rope = RoPE(theta=cfg.rope_theta, d_k=d_k, max_seq_len=cfg.context_length, device=device)
 
+    # batch size 1 but it will broadcast to x's batch size in rope's forward
     token_positions = torch.arange(cfg.context_length, device=device).unsqueeze(0)
-    rotary_fn = lambda x: rope(x, token_positions[:, :x.shape[-2]])
+    rotary_fn = lambda x: rope(x, token_positions[..., :x.shape[-2]])
 
     model = TransformerLM(
         d_model=cfg.d_model,
@@ -97,6 +99,11 @@ def train(cfg: TrainingConfig):
         num_layers=cfg.num_layers,
         rotary_fn=rotary_fn
     ).to(device)
+
+    # PyTorch 2.0+: "Free" 30-50% speedup on H100. Compile to fused Triton kernels.
+    # Note: The first step will lag for ~60s while it compiles.
+    if torch.cuda.is_available():
+        model = torch.compile(model)
 
     optimizer = AdamW(
         model.parameters(),
@@ -143,6 +150,7 @@ def train(cfg: TrainingConfig):
                 loss = cross_entropy(y, logits)
             loss.backward()
 
+            # clip gradient, meanwhile keep grad_norm for line plot
             grad_norm = gradient_clipping(model.parameters(), cfg.grad_clip)
 
             optimizer.step()
@@ -150,7 +158,7 @@ def train(cfg: TrainingConfig):
 
             if iteration % cfg.log_interval == 0 or iteration == cfg.max_iters - 1:
                 val_loss = evaluate_loss(model, val_data, cfg, device)
-                print(f"Iter {iteration} | Loss: {loss.item():.4f} | Val: {val_loss:.4f} | LR: {current_lr:.6f}")
+                print(f"Iter {iteration} | train/loss: {loss.item():.4f} | val/loss: {val_loss:.4f} | LR: {current_lr:.6f}")
 
                 wandb.log({
                     "train/loss": loss.item(),
@@ -178,7 +186,7 @@ if __name__ == "__main__":
 
     parser.add_argument("--d_model", type=int, default=512)
     parser.add_argument("--num_heads", type=int, default=8)
-    parser.add_argument("--d_ff", type=int, default=2048)
+    parser.add_argument("--d_ff", type=int, default=2048) # best to be a multiple of 64
     parser.add_argument("--num_layers", type=int, default=6)
     parser.add_argument("--vocab_size", type=int, default=50257)
     parser.add_argument("--context_length", type=int, default=256)
@@ -188,14 +196,13 @@ if __name__ == "__main__":
     parser.add_argument("--lr_max", type=float, default=6e-4)
     parser.add_argument("--lr_min", type=float, default=6e-5)
     parser.add_argument("--max_iters", type=int, default=5000)
-    # 2% of max_iters
-    parser.add_argument("--warmup_iters", type=int, default=100)
+    parser.add_argument("--warmup_iters", type=int, default=100) # 2% of max_iters
     parser.add_argument("--grad_clip", type=float, default=1.0)
 
     parser.add_argument("--weight_decay", type=float, default=0.1)
     parser.add_argument("--beta1", type=float, default=0.9)
     parser.add_argument("--beta2", type=float, default=0.95)
-    parser.add_argument("--eps", type=float, default=1e-8)
+    parser.add_argument("--eps", type=float, default=1e-6) # 1e-8 can break when fp16
 
     parser.add_argument("--train_path", type=str, required=True)
     parser.add_argument("--val_path", type=str, required=True)

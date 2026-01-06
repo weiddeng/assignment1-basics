@@ -4,9 +4,9 @@ metric:
   name: val/loss
   goal: minimize
 parameters:
-  # The Variables
+  # The Variables (3e-4 tested, worse than 6e-4)
   lr_max:
-    values: [3e-4, 6e-4, 1e-3, 3e-3]
+    values: [6e-4, 1e-3, 3e-3]
 
   # The Fixed Architecture
   d_model:
